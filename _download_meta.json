@@ -1,0 +1,35 @@
+{
+  "start_url": "https://isabelshic.com/",
+  "root_path_prefix": "",
+  "pages": {
+    "https://isabelshic.com/": "index.html"
+  },
+  "assets": {
+    "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3oQIwlBFgg.woff2": "assets/_external/fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3oQIwlBFgg.woff2",
+    "https://fonts.gstatic.com/s/sourceserif4/v14/vEF02_tTDB4M7-auWDN0ahZJW1ge6NmXpVAHV83Bfb_US2D2QYxoUKIkn98pRl9tDMQC.woff2": "assets/_external/fonts.gstatic.com/s/sourceserif4/v14/vEF02_tTDB4M7-auWDN0ahZJW1ge6NmXpVAHV83Bfb_US2D2QYxoUKIkn98pRl9tDMQC.woff2",
+    "https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2": "assets/_external/fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2",
+    "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "assets/_external/fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+    "https://isabelshic.com/isabel-drawing.png": "isabel-drawing.png",
+    "https://isabelshic.com/cog.png": "cog.png",
+    "https://isabelshic.com/starfish.png": "starfish.png",
+    "https://isabelshic.com/assets/index-BMDdMvVM.css": "assets/index-BMDdMvVM.css",
+    "https://isabelshic.com/marvin-ai-sparkle.png": "marvin-ai-sparkle.png",
+    "https://isabelshic.com/deathstar.png?v=3": "deathstar.png",
+    "https://isabelshic.com/assets/index-eYJ8xSML.js": "assets/index-eYJ8xSML.js",
+    "https://us-assets.i.posthog.com/array/phc_qAiL7Dnii72kkQj5vebTFmzDGuwwj9iV5qDemqPvtviU/config.js": "assets/_external/us-assets.i.posthog.com/array/phc_qAiL7Dnii72kkQj5vebTFmzDGuwwj9iV5qDemqPvtviU/config.js",
+    "https://isabelshic.com/api/public/case-studies": "api/public/case-studies.json",
+    "https://ipapi.co/json/": "assets/_external/ipapi.co/json/asset.json",
+    "https://portfoliobucket.sfo3.digitaloceanspaces.com/uploads/1776453649705-aeeadb78-7354-4450-afbf-6c353dd17da2.png": "assets/_external/portfoliobucket.sfo3.digitaloceanspaces.com/uploads/1776453649705-aeeadb78-7354-4450-afbf-6c353dd17da2.png",
+    "https://us-assets.i.posthog.com/static/web-vitals.js?v=1.372.10": "assets/_external/us-assets.i.posthog.com/static/web-vitals.js",
+    "https://us-assets.i.posthog.com/static/surveys.js?v=1.372.10": "assets/_external/us-assets.i.posthog.com/static/surveys.js",
+    "https://portfoliobucket.sfo3.digitaloceanspaces.com/uploads/1776452914370-eaa11a0c-1a92-46be-a134-ca9d08c1ed8c.mp4": "assets/_external/portfoliobucket.sfo3.digitaloceanspaces.com/uploads/1776452914370-eaa11a0c-1a92-46be-a134-ca9d08c1ed8c.mp4",
+    "https://isabelshic.com/api/public/site-visit": "api/public/site-visit.json",
+    "https://portfoliobucket.sfo3.digitaloceanspaces.com/uploads/1776452965943-811251c1-b101-4433-8672-692eb2644f27.mp4": "assets/_external/portfoliobucket.sfo3.digitaloceanspaces.com/uploads/1776452965943-811251c1-b101-4433-8672-692eb2644f27.mp4",
+    "https://portfoliobucket.sfo3.digitaloceanspaces.com/uploads/1776453765475-25812474-dca2-439f-ab36-0445d5b2273f.png": "assets/_external/portfoliobucket.sfo3.digitaloceanspaces.com/uploads/1776453765475-25812474-dca2-439f-ab36-0445d5b2273f.png",
+    "https://portfoliobucket.sfo3.digitaloceanspaces.com/uploads/1776452876992-a4b22974-eefd-410f-a772-2e051affd6fb.mp4": "assets/_external/portfoliobucket.sfo3.digitaloceanspaces.com/uploads/1776452876992-a4b22974-eefd-410f-a772-2e051affd6fb.mp4",
+    "https://isabelshic.com/favicon.png?v=1": "favicon.png",
+    "https://us-assets.i.posthog.com/static/dead-clicks-autocapture.js?v=1.372.10": "assets/_external/us-assets.i.posthog.com/static/dead-clicks-autocapture.js",
+    "https://us-assets.i.posthog.com/static/posthog-recorder.js?v=1.372.10": "assets/_external/us-assets.i.posthog.com/static/posthog-recorder.js"
+  },
+  "created_at": 1778572607.3900945
+}

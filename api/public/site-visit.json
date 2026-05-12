@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isabel Shic Portfolio</title>
+    <meta
+      name="description"
+      content="Isabel is a design engineer, currently at DigitalOcean and previously at NASA. A computer science graduate from UC Davis, Isabel builds designs, develops, and ships products users love."
+    />
+    <meta property="og:title" content="Isabel Shic Portfolio" />
+    <meta
+      property="og:description"
+      content="Isabel is a design engineer, currently at DigitalOcean and previously at NASA. A computer science graduate from UC Davis, Isabel builds designs, develops, and ships products users love."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Isabel Shic Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Isabel is a design engineer, currently at DigitalOcean and previously at NASA. A computer science graduate from UC Davis, Isabel builds designs, develops, and ships products users love."
+    />
+    <link rel="icon" href="/favicon.png?v=1" type="image/png" />
+    <meta name="theme-color" content="#101010" />
+    <!-- Match boot loader before JS/CSS (same as --color-black) -->
+    <style>
+      html:not(.boot-complete) body {
+        background: #101010;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Inter:wght@300;400;600&family=Nunito:wght@200;300;400&family=Source+Serif+4:ital,wght@0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index-eYJ8xSML.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BMDdMvVM.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
