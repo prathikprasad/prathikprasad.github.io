@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AetherVision | Real-Time Hand & Eye Tracking</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="theme-cyberpunk">
+  <!-- Loader Screen -->
+  <div id="loading-overlay" class="loading-overlay">
+    <div class="loader-container">
+      <div class="loader-ring"></div>
+      <div class="loader-logo">AETHER<span>VISION</span></div>
+      <p class="loader-status" id="loader-status">Initializing AI Vision Models...</p>
+      <div class="loader-progress-bar">
+        <div class="loader-progress-fill" id="loader-progress" style="width: 0%"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Calibration Screen Overlay -->
+  <div id="calibration-overlay" class="calibration-overlay hidden">
+    <div class="calibration-instruction">
+      <h2>Gaze Calibration Wizard</h2>
+      <p>Keep your head still and stare directly at the red dots. Click each dot as it lights up.</p>
+      <button id="start-calibration-btn" class="btn btn-primary">Start Calibration</button>
+      <button id="skip-calibration-btn" class="btn btn-secondary">Skip</button>
+    </div>
+    <div id="cal-points-container" class="cal-points-container hidden">
+      <div class="cal-dot" id="cal-pt-1" data-index="0" style="top: 10%; left: 10%;"><span></span></div>
+      <div class="cal-dot" id="cal-pt-2" data-index="1" style="top: 10%; right: 10%;"><span></span></div>
+      <div class="cal-dot" id="cal-pt-3" data-index="2" style="top: 50%; left: 50%; transform: translate(-50%, -50%);"><span></span></div>
+      <div class="cal-dot" id="cal-pt-4" data-index="3" style="bottom: 10%; left: 10%;"><span></span></div>
+      <div class="cal-dot" id="cal-pt-5" data-index="4" style="bottom: 10%; right: 10%;"><span></span></div>
+    </div>
+  </div>
+
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="logo">
+        <i data-lucide="eye" class="logo-icon"></i>
+        <span>AETHER</span>VISION
+      </div>
+      <div class="header-status">
+        <span class="status-indicator online"></span>
+        <span id="system-status-text">Ready</span>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="app-main">
+      <!-- Camera Feed Container -->
+      <section class="viewport-section">
+        <div class="video-wrapper">
+          <div class="video-container">
+            <video id="webcam" autoplay playsinline muted></video>
+            <canvas id="output-canvas"></canvas>
+            
+            <!-- Virtual Eye Cursor Target (Simulates gaze on screen) -->
+            <div id="gaze-pointer" class="gaze-pointer hidden"></div>
+          </div>
+          
+          <div class="video-controls-bar">
+            <button id="toggle-camera-btn" class="ctrl-btn active" title="Toggle Webcam">
+              <i data-lucide="video"></i>
+              <span>Webcam On</span>
+            </button>
+            <button id="btn-calibrate" class="ctrl-btn" title="Recalibrate Gaze">
+              <i data-lucide="target"></i>
+              <span>Calibrate Eye Gaze</span>
+            </button>
+            <span class="latency-pill">Latency: <span id="val-latency">0</span> ms</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sidebar Controls & Dashboards -->
+      <aside class="dashboard-sidebar">
+        <!-- Settings: Theme + Toggles combined -->
+        <div class="card">
+          <h3 class="card-title"><i data-lucide="settings"></i> Settings</h3>
+          <div class="theme-picker">
+            <button class="theme-btn active" data-theme="cyberpunk"><span class="color-dot cyberpunk"></span> Cyber</button>
+            <button class="theme-btn" data-theme="hologram"><span class="color-dot hologram"></span> Holo</button>
+            <button class="theme-btn" data-theme="minimalist"><span class="color-dot minimalist"></span> Minimal</button>
+          </div>
+          <div class="toggle-grid" style="margin-top: 10px;">
+            <label class="toggle-control"><input type="checkbox" id="chk-facemesh" checked><span class="toggle-slider"></span><span class="toggle-label">Face Mesh</span></label>
+            <label class="toggle-control"><input type="checkbox" id="chk-hands" checked><span class="toggle-slider"></span><span class="toggle-label">Hands</span></label>
+            <label class="toggle-control"><input type="checkbox" id="chk-irises" checked><span class="toggle-slider"></span><span class="toggle-label">Irises</span></label>
+            <label class="toggle-control"><input type="checkbox" id="chk-gazeline" checked><span class="toggle-slider"></span><span class="toggle-label">Gaze Ray</span></label>
+            <label class="toggle-control"><input type="checkbox" id="chk-bounding" checked><span class="toggle-slider"></span><span class="toggle-label">Bounding</span></label>
+            <label class="toggle-control"><input type="checkbox" id="chk-gazeptr" checked><span class="toggle-slider"></span><span class="toggle-label">Cursor</span></label>
+          </div>
+        </div>
+
+        <!-- Analytics -->
+        <div class="card">
+          <h3 class="card-title"><i data-lucide="activity"></i> Analytics</h3>
+          <div class="stats-grid">
+            <div class="stat-box"><span class="stat-label">FPS</span><span class="stat-value" id="val-fps">0</span></div>
+            <div class="stat-box"><span class="stat-label">Hands</span><span class="stat-value" id="val-hands-count">0</span></div>
+            <div class="stat-box"><span class="stat-label">Blinks</span><span class="stat-value" id="val-blinks">0</span></div>
+            <div class="stat-box"><span class="stat-label">Gaze</span><span class="stat-value text-glow" id="val-gaze-dir">Center</span></div>
+          </div>
+          <div class="card-section">
+            <div class="section-title">Gaze Offset</div>
+            <div class="vector-visualizer">
+              <div class="grid-center"></div>
+              <div id="vector-cursor" class="vector-cursor" style="transform: translate(-50%, -50%) translate(0px, 0px);"></div>
+            </div>
+            <div class="vector-values">
+              <span>X: <span id="val-gaze-x">0.00</span></span>
+              <span>Y: <span id="val-gaze-y">0.00</span></span>
+            </div>
+          </div>
+          <div class="card-section">
+            <div class="section-title">Hand Distance</div>
+            <div class="progress-bar-container">
+              <div id="bar-distance" class="progress-bar-fill" style="width: 0%"></div>
+            </div>
+            <div class="progress-bar-label" id="lbl-distance">Not detected</div>
+          </div>
+        </div>
+
+        <!-- Gesture -->
+        <div class="card">
+          <h3 class="card-title"><i data-lucide="sparkles"></i> Gesture</h3>
+          <div class="gesture-display">
+            <div class="gesture-icon-wrapper" id="gesture-indicator-wrap"></div>
+            <div class="gesture-details">
+              <span class="gesture-subtitle">Active</span>
+              <span class="gesture-name" id="val-gesture">No Hand</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <!-- MediaPipe Vision Tasks Library - Using CORS proxy for local development -->
+  <script>
+    // Load MediaPipe with CORS proxy for development
+    const script = document.createElement('script');
+    script.async = true;
+    // Using googleapis.com which hosts MediaPipe (or try without CORS issues)
+    script.src = 'https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/vision_bundle.js';
+    
+    // Fallback approach - if CORS fails, we'll handle it in app.js
+    script.onerror = () => {
+      console.warn('Failed to load from CDN, application will handle gracefully');
+      window.MediaPipeLoadFailed = true;
+    };
+    
+    document.head.appendChild(script);
+  </script>
+  
+  <!-- Application Module (waits for MediaPipe or handles gracefully) -->
+  <script type="module" src="app.js"></script>
+  <script>
+    // Initialize Lucide icons on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
