@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Everllence</title>
+  <meta name="description" content="A Zero-to-One Web Augmented Reality Experience in a Museum" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="../../assets/favicon.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body class="project-page">
+  <div class="cursor-wrapper" aria-hidden="true">
+    <div class="cursor"></div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="Prathik Prasad home">Prathik Prasad</a>
+    <nav class="nav" id="primaryNav" aria-label="Primary navigation">
+      <a class="nav-pill active" href="../../index.html#work">Work</a>
+      <a class="nav-pill muted" href="../../index.html#about">About</a>
+      <a class="linkedin" href="https://www.linkedin.com/in/prathikprasad/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+        <img src="../../assets/linkedin.svg" alt="" />
+      </a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+      <img src="../../assets/menu-icon.png" alt="" />
+    </button>
+  </header>
+
+  <main id="top" class="case-study">
+    <section class="case-panel case-hero">
+      <h1>A Zero-to-One Web Augmented Reality Experience in a Museum</h1>
+    </section>
+
+    <section class="case-panel case-intro">
+      <p class="case-kicker"><strong>The Vision: Overcoming the Empty Pedestal</strong></p>
+    </section>
+
+    <section class="case-section two-column">
+      <div class="case-copy">
+        <h2><strong>The Challenge</strong></h2>
+        <p>Physical 3D printed models were occasionally removed for maintenance or relocated for special exhibitions. When this happened, visitors were left with an empty pedestal and no way to explore these incredible feats of engineering.</p>
+        <p>The opportunity was clear: we needed a digital failsafe that was just as engaging, if not more so, than the physical models themselves.</p>
+      </div>
+      <div class="case-copy">
+        <h2>My Role: <strong>Augmented Reality User Experience Designer &amp; Developer</strong></h2>
+        <p>Led the project from zero: no existing solution, no template to follow.</p>
+        <p>One rule we stuck to throughout: no dedicated hardware, no app installs, just works.</p>
+      </div>
+      <div class="case-media-grid full-span">
+        <img src="../../assets/everllence/hero-museum.avif" alt="" />
+        <img src="../../assets/everllence/hero-interface.avif" alt="" />
+      </div>
+    </section>
+
+    <section class="case-panel">
+      <p>This vision required a delicate balance of cutting-edge interactive technology and deeply empathetic user experience design. We needed to bridge the physical and digital worlds seamlessly, ensuring that a visitor standing in the museum could instantly summon a 1:1 scale Compressor or Engine right in front of them.</p>
+    </section>
+
+    <section class="persona-panel">
+      <div>
+        <h2>David, <strong>The Curious Visitor</strong></h2>
+        <p>Museum Guest &amp; Engineering Enthusiast</p>
+      </div>
+      <div class="persona-details">
+        <p>GOALS<br />+Explore complex industrial machinery up close.<br />+Understand how massive engines work without reading dense plaques.</p>
+        <p>FRUSTRATIONS<br />-Disappointed when exhibits are closed or missing.<br />-Refuses to download a 500MB dedicated museum app on cellular data just for a 5-minute experience.</p>
+      </div>
+      <p><em>"I just want to see the exhibit. If I have to create an account or download an app, I'm walking away."</em></p>
+    </section>
+
+    <section class="case-section two-column">
+      <div class="case-copy">
+        <h2>Discovery: <strong>What are the Possibilities?</strong></h2>
+        <p>The options explored consisted of:</p>
+        <p>- iOS &amp; Android Museum App: this requires development time, more effort to push updates and also serves as a barrier for users with time to install the app, open and navigate a new install, local storage restrictions.</p>
+        <p>- AR Headset based experience: the number of headsets that can be available is a bottleneck, along with user comfort.</p>
+        <p>- Web-based-AR: This enabled faster development, deployment, quicker updates, majority of users know how to scan a QR code, no-install needed.</p>
+      </div>
+      <div class="case-copy">
+        <h2>Ambiguity: <strong>Navigating the Friction of Museum Tech</strong></h2>
+        <p>Two things became clear early on through market research and real-world data:</p>
+        <p>- <strong>App Resistance:</strong> 90% of museum apps are used by fewer than 3% of visitors, the install step alone kills adoption. <a href="https://www.nuseum.ai/en/museum-app-statistics-why-90-of-native-apps-fail/" target="_blank" rel="noreferrer"><em>[Nuseum]</em></a> Visitors won't download dedicated software for a single trip, but nearly half of visitors already use their phone to browse information while on-site. <a href="https://www.museumstrategy.org/en/how-many-museum-apps-do-you-have-in-your-smartphone/" target="_blank" rel="noreferrer"><em>[Museum Strategy]</em></a></p>
+        <p>- <strong>Maintenance Burdens:</strong> Museum-provided tablets proved operationally draining and costly to maintain at scale.</p>
+        <p>The pattern was hard to ignore, visitors are willing to use their phone, just not to install something for a one-off visit. The browser is where they already are. That's what pushed us toward a lightweight, WebAR solution. No install. No hardware dependency. Just a URL.</p>
+      </div>
+    </section>
+
+    <section class="case-section two-column">
+      <div class="case-copy">
+        <h2>The Frictionless Gateway: <strong>Leveraging the QR Code</strong></h2>
+        <p>The entry point had to be something visitors already knew, the strategy focused on leveraging the widespread adoption of QR codes as a familiar interface for accessing digital content. <a href="https://www.museumnext.com/article/qr-codes-are-experiencing-a-resurgence-but-how-can-they-benefit-museums/" target="_blank" rel="noreferrer"><em>[MuseumNext]</em></a></p>
+        <p>By delivering a robust 3D/AR experience entirely through a standard mobile browser, the project bypassed the need for app store downloads and complex onboarding. This approach ensured that the museum's content remained accessible, transforming the visitor's device into an immediate tool for exploration without technical barriers. <a href="https://www.qrcode-tiger.com/qr-code-adoption-rate" target="_blank" rel="noreferrer"><em>[QR Tiger]</em></a></p>
+        <p>We defined a dual-modality approach based on device context. On desktop computers, the system would display an interactive 3D model viewer alongside a prominent QR code prompt, bridging the gap to mobile. On mobile and tablet, scanning the code would instantly activate a full AR experience.</p>
+      </div>
+      <div class="case-image-column">
+        <img src="../../assets/everllence/qr-flow.avif" alt="" />
+      </div>
+    </section>
+
+    <section class="case-section two-column">
+      <div class="case-copy">
+        <h2>First Principles Design:<strong> Crafting a WebAR Interface</strong></h2>
+        <p>I sketched out a minimalist control scheme focused entirely on manipulation and scale. The core interaction loop involved panning, rotating, and scaling. A critical design decision was implementing distinct scale controls: a '1:1 true scale' mode to convey the massive, awe-inspiring size of an RG Compressor, and a 'small scale' mode so users could inspect intricate details without having to physically walk around a massive virtual object.</p>
+      </div>
+      <div class="case-media-grid sketch-grid">
+        <img src="../../assets/everllence/sketch-1.avif" alt="" />
+        <img src="../../assets/everllence/sketch-2.avif" alt="" />
+      </div>
+    </section>
+
+    <section class="principle-grid">
+      <article class="principle-card">
+        <img src="../../assets/everllence/invisible-ui.png" alt="" />
+        <h2><strong>Invisible UI</strong></h2>
+        <p>The 3D model is the hero. Controls should fade away when not in active use to maximize the AR canvas.</p>
+      </article>
+      <article class="principle-card">
+        <img src="../../assets/everllence/scale.webp" alt="" />
+        <h2><strong>Contextual Scale</strong></h2>
+        <p>Provide dual viewing modes: 1:1 scale for physical awe, and tabletop scale for detailed inspection.</p>
+      </article>
+      <article class="principle-card">
+        <img src="../../assets/everllence/modular.png" alt="" />
+        <h2><strong>Modular Architecture</strong></h2>
+        <p>Build a viewer wrapper that can accept any optimized 3D asset, ensuring the platform is future-proof for new exhibits.</p>
+      </article>
+    </section>
+
+    <section class="case-panel">
+      <p>During this phase, I also architected the technical foundation. By relying on lightweight open-source libraries, I ensured the viewer was modular. It wasn't just built for the ME-C engine; it was built as a scalable platform. The architecture separated the UI layer from the 3D rendering context, allowing us to easily swap out models as the museum's exhibits rotated.</p>
+    </section>
+
+    <section class="case-section">
+      <div class="case-copy">
+        <h2>Building &amp; Testing: <strong>Optimizing the Polygon Pipeline</strong></h2>
+        <p>Prototyping a zero-to-one AR product is as much a technical challenge as it is a design one. As I built out the first functional iterations, we immediately ran into performance bottlenecks. The raw CAD files provided by the engineering teams for the Electrolyzer and RG Compressor were massively complex, resulting in load times exceeding [INSERT METRIC: e.g., 45.0 seconds] on standard 4G connections.</p>
+        <p>I initiated a rigorous cycle of model optimization and user testing. We established a pipeline to decimate the 3D meshes, bake lighting into textures, and compress the assets without losing the critical visual fidelity that industrial models demand. We tested these optimized models weekly with actual museum visitors, observing their body language and interaction patterns.</p>
+        <p>The quantitative test results guided our iteration. We discovered that if the AR experience didn't load and anchor within [INSERT METRIC: e.g., 4.5 seconds], users would assume it was broken and close their browser. By refining the open-source viewer and implementing progressive loading, we brought the average initialization time down significantly. We also refined the AR anchoring mechanics, adding visual guides to help users find flat surfaces to place the models.</p>
+      </div>
+    </section>
+
+    <section class="pipeline-grid">
+      <article class="pipeline-card"><span>1</span><h2><strong>Asset Intake</strong></h2><p>Receiving raw, high-poly CAD files from the engineering department.</p></article>
+      <article class="pipeline-card"><span>2</span><h2><strong>Mesh Decimation</strong></h2><p>Dramatically reducing the polygon count while preserving the exterior silhouette and key mechanical details.</p></article>
+      <article class="pipeline-card"><span>3</span><h2><strong>Texture Baking</strong></h2><p>Baking complex lighting and material properties into lightweight image textures to reduce real-time rendering load.</p></article>
+      <article class="pipeline-card"><span>4</span><h2><strong>Web Compression</strong></h2><p>Converting assets into web-optimized formats to ensure rapid downloading over cellular networks.</p></article>
+      <article class="pipeline-card"><span>5</span><h2><strong>QA &amp; Device Testing</strong></h2><p>Validating performance across a matrix of low, mid, and high-tier iOS and Android devices.</p></article>
+    </section>
+
+    <section class="case-panel result-panel">
+      <h2>What was the <strong>Result</strong>?</h2>
+      <p>A lightweight browser based modelviewer<br />Running on open source libraries<br />Streamlined for both Android &amp; iOS<br />When opened on a Computer(non-handheld devices): A 3D Model Viewer, explore the 3D Model, also shows a QR code to scan using a phone/tablet<br />When opened on a phone/tablet with AR capabilities: A few control buttons Start AR buttons</p>
+      <div class="result-grid">
+        <div class="result-media"><img src="../../assets/everllence/screen-recording.gif" alt="" /></div>
+        <div class="result-media"><img src="../../assets/everllence/phone-result.avif" alt="" /></div>
+        <div class="result-media"><img src="../../assets/everllence/result-frame.avif" alt="" /></div>
+      </div>
+    </section>
+
+    <section class="contact project-contact" id="about" aria-label="Contact">
+      <h2>Want to work together?</h2>
+      <p>If you like what you see and want to work together, get in touch!</p>
+      <a href="mailto:prathikp.prasad@gmail.com?subject=Contact%20via%20Portfolio">prathikp.prasad@gmail.com</a>
+    </section>
+  </main>
+
+  <script src="../../script.js"></script>
+</body>
+</html>
