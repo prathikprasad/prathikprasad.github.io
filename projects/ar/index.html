@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KARVIMIO AR Assembly Guidance</title>
+  <meta name="description" content="Hands-free AR assembly guidance for surgical instruments in the operating room." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="../../assets/favicon.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body class="project-page">
+  <div class="cursor-wrapper" aria-hidden="true">
+    <div class="cursor"></div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="Prathik Prasad home">Prathik Prasad</a>
+    <nav class="nav" id="primaryNav" aria-label="Primary navigation">
+      <a class="nav-pill active" href="../../index.html#work">Work</a>
+      <a class="nav-pill muted" href="../../index.html#about">About</a>
+      <a class="linkedin" href="https://www.linkedin.com/in/prathikprasad/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+        <img src="../../assets/linkedin.svg" alt="" />
+      </a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+      <img src="../../assets/menu-icon.png" alt="" />
+    </button>
+  </header>
+
+  <main id="top" class="case-study">
+    <section class="case-panel case-hero">
+      <h1>KARVIMIO: Hands-Free AR Assembly Guidance for the Operating Room</h1>
+    </section>
+
+    <section class="case-panel case-intro">
+      <p class="case-kicker"><strong>The Vision: Replacing Paper Manuals with Sterile Spatial Guidance</strong></p>
+    </section>
+
+    <section class="case-section two-column">
+      <div class="case-copy">
+        <h2><strong>Context &amp; Opportunity</strong></h2>
+        <p>In high-stakes medical environments, the flawless preparation and assembly of complex surgical instruments is critical to patient safety and operational efficiency. Surgical staff are frequently required to assemble specialized, rarely used tools under immense pressure.</p>
+        <p>At the Human-Centered Computing and Extended Reality (HEX) Lab at the Technical University of Munich, in collaboration with Klinikum rechts der Isar, we initiated KARVIMIO to address this workflow bottleneck.</p>
+      </div>
+      <div class="case-copy">
+        <h2>My Role: <strong>XR Interaction Designer &amp; Researcher</strong></h2>
+        <p>I conceptualized, designed, and evaluated spatial interfaces that could replace paper manuals without compromising sterility or focus in the operating room.</p>
+        <p>The system used HoloLens 2, AI-based object recognition, and markerless 6D pose estimation to deliver context-aware instructions directly into the user's field of view.</p>
+      </div>
+      <div class="case-media-grid full-span">
+        <div class="image-placeholder">
+          <p>A first-person HoloLens 2 view with a dark blue semi-transparent UI panel, gaze-activated navigation buttons, and a color-coded floating tooltip pointing to a physical screw.</p>
+          <span>KARVIMIO AR Interface Overview</span>
+        </div>
+        <img src="../../assets/ar-tool-assembly.webp" alt="AR tool assembly guidance preview" />
+      </div>
+    </section>
+
+    <section class="case-panel">
+      <p>The opportunity was to move from static 2D manuals to dynamic 3D spatial guidance. By giving users hands-free, step-by-step instructions, we aimed to reduce cognitive load, minimize assembly errors, and mitigate the cascading delays that affect surgical procedures.</p>
+    </section>
+
+    <section class="case-section two-column metric-section">
+      <div class="metric-card">
+        <strong>50.5%</strong>
+        <span>OR Nurse Interruptions</span>
+        <p>Percentage of OR interruptions directly affecting nursing staff during procedures.</p>
+      </div>
+      <div class="metric-card">
+        <strong>35.1%</strong>
+        <span>Surgical Interruptions</span>
+        <p>Percentage of equipment-related interruptions impacting surgeons.</p>
+      </div>
+    </section>
+
+    <section class="persona-panel">
+      <div>
+        <h2>Elena, <strong>Senior Scrub Nurse</strong></h2>
+        <p>Operating Room Specialist</p>
+      </div>
+      <div class="persona-details">
+        <p>GOALS<br />+Maintain absolute sterility during instrument preparation.<br />+Assemble complex, rarely used surgical tools quickly and accurately.<br />+Minimize dependency on circulating nurses for instruction retrieval.</p>
+        <p>FRUSTRATIONS<br />-Having to verbally direct a non-sterile colleague to turn pages in a paper manual.<br />-Translating ambiguous 2D diagrams into 3D physical assemblies under time pressure.<br />-Visual clutter and densely packed instrument tables causing cognitive overload.</p>
+      </div>
+      <p><em>"I cannot break scrub to check a manual, so I have to guess or wait for someone to help me. Both options waste critical time."</em></p>
+    </section>
+
+    <section class="case-section two-column">
+      <div class="case-copy">
+        <h2>The Problem in Depth: <strong>Paper is Non-Sterile</strong></h2>
+        <p>The current standard for surgical instrument assembly relies heavily on paper-based manuals. In the operating room, this creates a severe usability flaw: a scrub nurse cannot touch paper without compromising sterility.</p>
+        <p>As a result, the nurse must rely on a second, non-sterile team member to hold the manual and turn pages. This dependency consumes time from two skilled professionals and distracts from the immediate task.</p>
+      </div>
+      <div class="case-copy">
+        <h2>The Cognitive Gap: <strong>2D Schematics vs. 3D Reality</strong></h2>
+        <p>Translating 2D technical schematics into 3D physical actions requires high cognitive effort. In a dense OR setup with multiple instrument parts scattered across sterile tables, identifying the correct component and orientation becomes a stress-inducing process.</p>
+        <p>We needed a solution that eliminated physical interaction with instructional materials while providing unambiguous spatial context.</p>
+      </div>
+      <div class="image-placeholder full-span">
+        <p>A split-view comparison showing a complex 2D technical piping diagram beside a physical prototype setup where a user maps the schematic to real-world components.</p>
+        <span>The Cognitive Gap</span>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-copy">
+        <h2>Research &amp; Discovery: <strong>A 32-Person Within-Subject Study</strong></h2>
+        <p>To systematically evaluate AR guidance, we designed a within-subject user study with 32 participants: 16 medical experts with OR experience and 16 laypeople. Participants assembled four 3D-printed instruments of varying complexity using four guidance methods: paper baseline, marker-fixed AR, field-of-view fixed AR, and in-situ AR.</p>
+        <p>We structured the evaluation around the General Assembly Task Model (GATM), which breaks assembly into measurable blocks: locating a part, picking it up, finding its correct orientation, and executing the final assembly. We collected objective metrics such as task completion time and error rates, alongside NASA-TLX, System Usability Scale, and User Experience Questionnaire feedback.</p>
+      </div>
+    </section>
+
+    <section class="pipeline-grid">
+      <article class="pipeline-card"><span>1</span><h2><strong>t-locate</strong></h2><p>User scans the workspace to find the required component. Dense visual clutter makes small, similarly colored parts difficult to identify.</p></article>
+      <article class="pipeline-card"><span>2</span><h2><strong>t-pick</strong></h2><p>User physically grasps the targeted component. Ambiguous highlighting can lead to accidentally picking the wrong part.</p></article>
+      <article class="pipeline-card"><span>3</span><h2><strong>t-locate-pos</strong></h2><p>User determines the correct spatial orientation and destination for the part.</p></article>
+      <article class="pipeline-card"><span>4</span><h2><strong>t-assemble</strong></h2><p>User connects the component to the main assembly housing while hands may occlude the AR guide.</p></article>
+      <article class="pipeline-card"><span>5</span><h2><strong>Feedback</strong></h2><p>Participants evaluated cognitive load, usability, and the clarity of each AR visualization method.</p></article>
+    </section>
+
+    <section class="case-panel">
+      <p>Participants praised the hands-free nature of AR. One lay participant described it as "intuitive, more time-saving than traditional manuals as well as independent of a second person." But the in-situ method revealed a critical flaw: when white holograms overlapped white physical components, exact orientation was hard to read.</p>
+    </section>
+
+    <section class="case-section two-column">
+      <div class="case-copy">
+        <h2>Framing the Challenge: <strong>Guidance Without Obstruction</strong></h2>
+        <p>The core design challenge became clear: how do we provide precise, context-aware 3D guidance without digital overlays obstructing the user's view of the physical task?</p>
+        <p>The OR constraints meant we could not rely on QR codes or physical markers because they compromise sterility. We had to use markerless 6D pose estimation, which introduced latency and spatial offset.</p>
+      </div>
+      <div class="case-copy">
+        <h2>Technical Constraints: <strong>Markerless Tracking in Practice</strong></h2>
+        <p>A top-down Azure Kinect camera tracked instruments and sent RGB and depth data to a server running AI processing at 16 frames per second. The resulting 6D pose data was transmitted by Wi-Fi to the HoloLens 2.</p>
+        <p>This offloaded heavy processing, but introduced 60 ms latency and a pose estimation error ranging from 0.5 cm to 2 cm. For millimeter-precise surgical tools, that offset could make in-situ holograms feel misaligned.</p>
+      </div>
+    </section>
+
+    <section class="pipeline-grid">
+      <article class="pipeline-card"><span>1</span><h2><strong>Data Capture</strong></h2><p>Azure Kinect captures top-down RGB and depth images of the sterile workspace.</p></article>
+      <article class="pipeline-card"><span>2</span><h2><strong>Pose Estimation</strong></h2><p>YOLOv8Pose processes images at 16 FPS to determine 6D coordinates.</p></article>
+      <article class="pipeline-card"><span>3</span><h2><strong>Transmission</strong></h2><p>Pose data travels over local Wi-Fi to the HoloLens 2 with 60 ms latency.</p></article>
+      <article class="pipeline-card"><span>4</span><h2><strong>AR Registration</strong></h2><p>A Unity application maps coordinates into the spatial environment.</p></article>
+      <article class="pipeline-card"><span>5</span><h2><strong>UI Anchoring</strong></h2><p>Tooltips and instruction panels are anchored so guidance remains readable.</p></article>
+    </section>
+
+    <section class="principle-grid">
+      <article class="principle-card">
+        <div class="principle-icon">01</div>
+        <h2><strong>Absolute Sterility</strong></h2>
+        <p>Zero physical touch required to navigate instructions; the interaction model relies entirely on gaze.</p>
+      </article>
+      <article class="principle-card">
+        <div class="principle-icon">02</div>
+        <h2><strong>Unobstructed Vision</strong></h2>
+        <p>Digital overlays must never completely occlude the user's hands or the instrument connections.</p>
+      </article>
+      <article class="principle-card">
+        <div class="principle-icon">03</div>
+        <h2><strong>Graceful Degradation</strong></h2>
+        <p>The UI must remain helpful even when markerless tracking introduces a 0.5-2 cm spatial offset.</p>
+      </article>
+    </section>
+
+    <section class="case-section two-column">
+      <div class="case-copy">
+        <h2>Design Exploration: <strong>Rendering for Clarity</strong></h2>
+        <p>We prototyped six visual shaders for AR overlays: solid, semi-transparent, wireframe plus fill, standard wireframe, Fresnel, and silhouette. The goal was to balance structural context with real-world visibility.</p>
+        <p>Solid models looked impressive in isolation but failed in practice because they blocked the user's grip. Standard wireframes kept the physical hands visible but lacked enough depth information for precise assembly.</p>
+      </div>
+      <div class="case-copy">
+        <h2>Iteration: <strong>Wireframe plus Translucent Fill</strong></h2>
+        <p>A wireframe with light translucent fill gave the best combination of structural cues and visibility. But placement mattered as much as material. We tested in-situ, FoV-fixed, and marker-fixed spatial paradigms.</p>
+        <p>In-situ felt the most futuristic, but the 0.5-2 cm tracking offset made it mentally taxing. Marker-fixed and FoV-fixed guidance kept the work surface clearer and gave users a stable point of reference.</p>
+      </div>
+      <div class="image-placeholder full-span">
+        <p>A visual matrix showing six AR rendering styles applied to a digital screw: solid, semi-transparent, wireframe plus fill, wireframe, Fresnel, and silhouette.</p>
+        <span>Rendering Shaders Comparison</span>
+      </div>
+    </section>
+
+    <section class="case-section two-column">
+      <div class="case-copy">
+        <h2>Interaction Design: <strong>Hands-Free Control</strong></h2>
+        <p>Physical interaction with the UI was prohibited, so we designed a gaze-controlled interface. Large Previous and Next buttons were anchored spatially within the user's environment.</p>
+        <p>To prevent accidental triggers while users scanned a busy table, the system used a deliberate 3-second dwell time. A progressive visual fill and concluding chime confirmed navigation.</p>
+      </div>
+      <div class="case-copy">
+        <h2>Reducing Cognitive Load: <strong>Locate First, Assemble Second</strong></h2>
+        <p>We separated picking instructions from assembly instructions. First, a color-coded floating tooltip with a directional arrow pointed to the physical object to pick up. Then, once the part was identified, the system showed the 3D animation explaining how it connected to the main assembly.</p>
+        <p>This reduced visual clutter and gave each step a clear purpose.</p>
+      </div>
+      <div class="image-placeholder full-span">
+        <p>A close-up of the AR UI with large Next and Previous buttons. The Next button is partially filled to show the 3-second gaze dwell interaction.</p>
+        <span>Gaze-Controlled Navigation</span>
+      </div>
+    </section>
+
+    <section class="case-panel">
+      <p>We finalized marker-fixed mode as the primary fallback because it kept the user's central field of view unobstructed. The instruction UI and animations stayed in a static, world-fixed position above the workspace, making the table easier to read and reducing the mental cost of tracking jitter.</p>
+    </section>
+
+    <section class="case-panel result-panel">
+      <h2>The Solution: <strong>KARVIMIO AR</strong></h2>
+      <p>The final experience blends spatial computing and computer vision. A dark blue, semi-transparent instruction panel floats unobtrusively in the environment while markerless tracking identifies sterile 3D-printed instruments on the table and places color-coded tooltips over the exact parts required for each step.</p>
+      <div class="result-grid">
+        <div class="result-media placeholder-media">
+          <div class="image-placeholder">
+            <p>A before-and-after comparison: paper manuals requiring a second non-sterile person versus KARVIMIO AR with hands-free gaze control, looping 3D animations, and spatial tooltips.</p>
+            <span>Before and After</span>
+          </div>
+        </div>
+        <div class="result-media placeholder-media">
+          <div class="image-placeholder">
+            <p>A ghost screw animation moving from its starting position toward a physical blue clamp body, then rotating into its final seated position.</p>
+            <span>Ghosting Animation Sequence</span>
+          </div>
+        </div>
+        <div class="result-media placeholder-media">
+          <div class="image-placeholder">
+            <p>A technical architecture diagram showing Azure Kinect, server-side 6D pose estimation, Wi-Fi transmission, and HoloLens 2 AR registration.</p>
+            <span>System Architecture</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section two-column metric-section">
+      <div class="metric-card">
+        <strong>82.50</strong>
+        <span>SUS Score</span>
+        <p>Achieved by marker-fixed AR guidance, indicating excellent usability.</p>
+      </div>
+      <div class="metric-card">
+        <strong>0.55</strong>
+        <span>Average Errors</span>
+        <p>Average errors made by medical experts using AR, compared with 1.20 by laypeople.</p>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-copy">
+        <h2>Impact &amp; Results: <strong>Stability Beat Spectacle</strong></h2>
+        <p>The 32-person study validated the design direction. AR methods scored higher in user experience, especially in stimulation and novelty, while marker-fixed AR achieved the strongest usability outcome.</p>
+        <p>Medical experts made significantly fewer assembly errors than laypeople and recognized the value of the system for training. Expert feedback reinforced the decision to keep the table clear, while participants noted that graphic representation of the parts to be picked helped a lot.</p>
+        <p>Despite the appeal of in-situ animations, the data showed that users had to compensate for tracking offsets. By prioritizing stability and clear visibility over flashy overlays, we delivered a tool better suited to medical professionals.</p>
+      </div>
+      <div class="image-placeholder">
+        <p>A bar chart or dashboard comparing SUS scores for paper, marker-fixed AR, FoV-fixed AR, and in-situ AR, highlighting the 82.50 score for marker-fixed mode.</p>
+        <span>Usability Score Outcomes</span>
+      </div>
+    </section>
+
+    <section class="case-section two-column">
+      <div class="case-copy">
+        <h2>Reflection: <strong>Designing for Mission-Critical AR</strong></h2>
+        <p>KARVIMIO was a lesson in the realities of deploying spatial computing in high-stakes environments. What looks best in a concept video, such as holograms perfectly overlaying physical objects, can hinder performance if the tracking is not flawless.</p>
+        <p>The 0.5-2 cm offset showed that graceful degradation is essential. A stable, slightly offset reference can be more useful than a jittery overlay that tries to be perfectly aligned.</p>
+      </div>
+      <div class="case-copy">
+        <h2>Next Steps: <strong>Handling Occlusion</strong></h2>
+        <p>The next iteration will focus on refining AI tracking to handle severe hand occlusions, which remains the biggest technical hurdle.</p>
+        <p>We also plan to explore context-aware UI that automatically transitions from solid to wireframe rendering as the user's hand approaches the assembly point.</p>
+      </div>
+      <div class="image-placeholder full-span">
+        <p>A photograph of physical 3D-printed instrument parts scattered on a blue surgical cloth, with yellow dashed boxes highlighting base plates, links, and nuts used to train object detection.</p>
+        <span>Physical Testing Artifacts</span>
+      </div>
+    </section>
+
+    <section class="case-panel">
+      <p><strong>Key insight:</strong> In high-stakes environments, UI stability trumps spatial immersion. Users prefer a static, reliable reference over a dynamic overlay that jitters or misaligns due to tracking latency.</p>
+    </section>
+
+    <section class="case-panel case-hero">
+      <h1>Evaluating Hands-Free Gaze-Driven Selection for Surgical AR</h1>
+    </section>
+
+    <section class="case-panel case-intro">
+      <p class="case-kicker"><strong>The Next Question: How Should Sterile Users Select AR Instructions?</strong></p>
+    </section>
+
+    <section class="case-section two-column">
+      <div class="case-copy">
+        <h2><strong>Context &amp; Opportunity</strong></h2>
+        <p>After establishing KARVIMIO as an AR assistance system for surgical instrument assembly, the next challenge was interaction. Scrub nurses perform complex bimanual tasks and cannot touch controllers, screens, or hand-tracking buttons without violating sterility.</p>
+        <p>Voice commands were also unsuitable because operating rooms are noisy and speech recognition failures can become hazardous in a high-pressure clinical workflow.</p>
+      </div>
+      <div class="case-copy">
+        <h2>My Role: <strong>XR Interaction Designer &amp; Researcher</strong></h2>
+        <p>I designed, prototyped, and evaluated gaze-driven selection techniques for Magic Leap 2 using Unity 2022.3.30f1 and MRTK 2.8.3.0.</p>
+        <p>The goal was to benchmark eye-only selection against multimodal baselines and identify an interaction model that maximized precision while minimizing physical and cognitive workload.</p>
+      </div>
+      <div class="image-placeholder full-span">
+        <p>A high-fidelity photograph showing a scrub nurse in a sterile operating room wearing a Magic Leap 2 AR headset, with surgical instruments on a table and an overhead camera for AI object detection.</p>
+        <span>The KARVIMIO Operating Room Setup</span>
+      </div>
+    </section>
+
+    <section class="case-section two-column">
+      <div class="case-copy">
+        <h2>The Problem in Depth: <strong>The Midas Touch Dilemma</strong></h2>
+        <p>Gaze interfaces must distinguish between a user simply looking at an element and intentionally selecting it. Continuous head movement and long dwell times can solve this technically, but they create physical fatigue during long procedures.</p>
+        <p>Scrub nurses work under intense temporal demand, so even small interaction delays can disrupt surgical flow.</p>
+      </div>
+      <div class="case-copy">
+        <h2>Baseline Trade-Offs: <strong>Foot Pedal vs. Eye-Only Input</strong></h2>
+        <p>Foot pedals are common in medical contexts and provide mechanical certainty, but they add hardware, limit mobility, and can introduce tripping hazards.</p>
+        <p>Eye-only inputs such as blinking and winking require no external hardware, but depend heavily on headset sensor accuracy and can create false positives.</p>
+      </div>
+      <div class="image-placeholder full-span">
+        <p>An annotated diagram showing OR constraints: crossed-out hands for sterility, crossed-out mouth for noise, and crossed-out heavy head movement for fatigue, pointing toward gaze and foot input as viable channels.</p>
+        <span>Mapping the Hands-Free Constraints</span>
+      </div>
+    </section>
+
+    <section class="persona-panel">
+      <div>
+        <h2>Sarah, <strong>Scrub Nurse</strong></h2>
+        <p>Operating Room Specialist</p>
+      </div>
+      <div class="persona-details">
+        <p>GOALS<br />+Assemble complex surgical instruments quickly and sterilely.<br />+Access procedural manuals without breaking scrub.</p>
+        <p>FRUSTRATIONS<br />-Voice commands fail over the loud noise of the OR.<br />-Hands cannot be used to tap AR buttons due to sterility protocols.<br />-Accidental selections could skip crucial procedural steps.</p>
+      </div>
+      <p><em>"I need the AR system to respond instantly to my gaze, but it absolutely cannot trigger by accident while I am focusing on a scalpel."</em></p>
+    </section>
+
+    <section class="case-section">
+      <div class="case-copy">
+        <h2>Research &amp; Discovery: <strong>Benchmarking Four Selection Techniques</strong></h2>
+        <p>We ran a within-subject study using a Latin-square design to balance condition ordering. The 32 participants were split into 16 professional scrub nurses and 16 non-medical laypeople, allowing us to isolate how domain expertise changes workload perception and usability expectations.</p>
+        <p>Participants completed a precise 3D object alignment task using four selection techniques: 2-second dwell time, double-blink, double-wink, and a physical foot pedal baseline. We logged task completion time and per-selection interaction time, then collected NASA-TLX, SUS, and UEQ feedback.</p>
+      </div>
+    </section>
+
+    <section class="pipeline-grid">
+      <article class="pipeline-card"><span>1</span><h2><strong>Consent &amp; Setup</strong></h2><p>Participants completed demographic surveys and acclimatized to Magic Leap 2 through gaze calibration.</p></article>
+      <article class="pipeline-card"><span>2</span><h2><strong>Tutorial</strong></h2><p>Users practiced each selection technique five times to build baseline familiarity.</p></article>
+      <article class="pipeline-card"><span>3</span><h2><strong>Alignment Task</strong></h2><p>Participants aligned a 3D object along X, Y, and Z axes while telemetry was logged.</p></article>
+      <article class="pipeline-card"><span>4</span><h2><strong>Questionnaires</strong></h2><p>NASA-TLX, SUS, and UEQ captured perceived workload, usability, and experience quality.</p></article>
+      <article class="pipeline-card"><span>5</span><h2><strong>Feedback</strong></h2><p>Participants described fatigue, reliability, speed, and clinical usefulness.</p></article>
+    </section>
+
+    <section class="case-panel">
+      <p>The results challenged our assumptions. The foot pedal produced the strongest overall experience, while double-wink was the fastest individual selection technique. But the same wink interaction also increased mental demand and exposed hardware detection instability.</p>
+    </section>
+
+    <section class="case-section two-column metric-section">
+      <div class="metric-card">
+        <strong>74.69</strong>
+        <span>Foot Pedal SUS</span>
+        <p>The highest usability score among the evaluated selection methods.</p>
+      </div>
+      <div class="metric-card">
+        <strong>1.85s</strong>
+        <span>Wink Selection Speed</span>
+        <p>Average per-action selection time for double-wink, the fastest eye-only method.</p>
+      </div>
+    </section>
+
+    <section class="case-section two-column">
+      <div class="case-copy">
+        <h2>Framing the Challenge: <strong>Reliability Over Novelty</strong></h2>
+        <p>Medical professionals were significantly more critical of temporal delays and system errors than laypeople. In this context, UI friction is not just annoying; it can threaten procedure flow.</p>
+        <p>Asymmetric facial gestures such as winking were fast, but caused higher mental demand and were prone to detection errors. Some participants reported that the system interpreted too much input as blinking.</p>
+      </div>
+      <div class="case-copy">
+        <h2>Design Direction: <strong>Bridge Hardware Certainty and Gaze Freedom</strong></h2>
+        <p>The challenge became bridging the mechanical reliability of a foot pedal with the hardware-free convenience of gaze-only input.</p>
+        <p>Dwell-based selection was slow, but dependable. The interaction framework needed to support multimodal input, using the foot pedal for primary selection while keeping dwell time as a sterile fallback when mobility was restricted.</p>
+      </div>
+      <div class="image-placeholder full-span">
+        <p>A 2x2 matrix plotting dwell time, double-blink, double-wink, and foot pedal against speed per selection and system reliability, with the foot pedal in the ideal quadrant.</p>
+        <span>Trade-Off Matrix</span>
+      </div>
+    </section>
+
+    <section class="principle-grid">
+      <article class="principle-card">
+        <div class="principle-icon">01</div>
+        <h2><strong>Zero False Positives</strong></h2>
+        <p>In surgery, an accidental selection is more dangerous than a slow selection. Robustness must supersede speed.</p>
+      </article>
+      <article class="principle-card">
+        <div class="principle-icon">02</div>
+        <h2><strong>Low Physical Fatigue</strong></h2>
+        <p>Interaction must avoid strenuous head movement and unnatural facial gestures during long procedures.</p>
+      </article>
+      <article class="principle-card">
+        <div class="principle-icon">03</div>
+        <h2><strong>Clear Feedback</strong></h2>
+        <p>Users need visible hover states, reticle feedback, and audio confirmation to trust invisible gaze tracking.</p>
+      </article>
+    </section>
+
+    <section class="case-section two-column">
+      <div class="case-copy">
+        <h2>Design Exploration: <strong>A Controlled Alignment Interface</strong></h2>
+        <p>We designed a point-and-select 3D alignment task to isolate selection technique performance from navigation complexity. The interface used a movable red 3D object that had to be aligned with a white target object initially spaced 6 cm apart.</p>
+        <p>Users controlled movement along X, Y, and Z axes through directional buttons arranged in a cross pattern.</p>
+      </div>
+      <div class="case-copy">
+        <h2>Visual Feedback: <strong>Reticle, Hover, Chime</strong></h2>
+        <p>Directional controls were placed in semi-transparent blue and purple containers with high-contrast white iconography. A small white circular reticle continuously showed the user's estimated gaze position.</p>
+        <p>When gaze intersected with a button, the container highlighted. Each successful selection moved the 3D object by 1 cm and played a distinct chime.</p>
+      </div>
+      <div class="image-placeholder full-span">
+        <p>A high-fidelity mockup of the AR alignment interface showing semi-transparent blue and purple directional buttons around a central 3D cube, with a white gaze reticle highlighting the forward button.</p>
+        <span>AR Interface Design</span>
+      </div>
+    </section>
+
+    <section class="pipeline-grid">
+      <article class="pipeline-card"><span>1</span><h2><strong>Targeting</strong></h2><p>User moves their eyes to position the white reticle over a directional button.</p></article>
+      <article class="pipeline-card"><span>2</span><h2><strong>Hover State</strong></h2><p>The button highlights to confirm that the system recognizes the user's gaze.</p></article>
+      <article class="pipeline-card"><span>3</span><h2><strong>Trigger</strong></h2><p>User performs a double-wink, double-blink, dwell, or foot press to activate selection.</p></article>
+      <article class="pipeline-card"><span>4</span><h2><strong>Retry</strong></h2><p>When hardware misinterprets a blink or wink, the user repeats the selection.</p></article>
+      <article class="pipeline-card"><span>5</span><h2><strong>Confirm</strong></h2><p>The object moves 1 cm and a chime confirms that the action succeeded.</p></article>
+    </section>
+
+    <section class="case-panel result-panel">
+      <h2>The Solution: <strong>A Testable Multimodal AR Selection Framework</strong></h2>
+      <p>The final prototype integrated all four selection modalities into one standardized interface. By keeping the visual layout and task mechanics constant, the study isolated the input method as the primary variable.</p>
+      <div class="result-grid">
+        <div class="result-media placeholder-media">
+          <div class="image-placeholder">
+            <p>A before-and-after comparison: 2-second dwell time as a reliable but slow eye-only baseline versus foot pedal selection as a faster multimodal method.</p>
+            <span>Dwell vs. Foot Pedal</span>
+          </div>
+        </div>
+        <div class="result-media placeholder-media">
+          <div class="image-placeholder">
+            <p>A storyboard sequence through the Magic Leap 2 showing target spotting, hover activation, trigger execution, and the 3D object shifting into alignment.</p>
+            <span>Interaction Flow</span>
+          </div>
+        </div>
+        <div class="result-media placeholder-media">
+          <div class="image-placeholder">
+            <p>A data dashboard or boxplot comparison of task completion times across dwell time, double-blink, double-wink, and foot pedal.</p>
+            <span>Task Completion Times</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section two-column metric-section">
+      <div class="metric-card">
+        <strong>25.43s</strong>
+        <span>Foot Pedal Task Time</span>
+        <p>Average total task completion time, significantly outperforming dwell time.</p>
+      </div>
+      <div class="metric-card">
+        <strong>60.54s</strong>
+        <span>Dwell Task Time</span>
+        <p>Average total completion time for the reliable but slower 2-second dwell method.</p>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-copy">
+        <h2>Impact &amp; Results: <strong>Definitive Benchmarks for Sterile AR Input</strong></h2>
+        <p>The foot pedal emerged as the superior method for overall usability, with a SUS score of 74.69, the lowest frustration rating, and the fastest total task completion time at 25.43 seconds.</p>
+        <p>Eye-only methods revealed a more nuanced trade-off. Double-wink achieved the fastest per-selection speed at 1.85 seconds, but tracking inaccuracies and false positives stretched total task time to 30.53 seconds and increased mental demand.</p>
+        <p>The study proved that 100% hands-free AR navigation is feasible, but the optimal selection trigger depends heavily on context, hardware reliability, and the clinical tolerance for false positives.</p>
+      </div>
+    </section>
+
+    <section class="case-section two-column">
+      <div class="case-copy">
+        <h2>Reflection: <strong>Mechanical Reliability Still Matters</strong></h2>
+        <p>The main takeaway was the difference in technology tolerance between domains. Designing for laypeople allows a margin of error that medical professionals working under cognitive load cannot accept.</p>
+        <p>In surgical UI design, mechanical reliability often beats theoretical interaction speed. Robust, low-fatigue fallbacks are more valuable than novel but fragile input modalities.</p>
+      </div>
+      <div class="case-copy">
+        <h2>Next Steps: <strong>Adaptive and Predictive Input</strong></h2>
+        <p>Future iterations could explore adaptive dwell times that respond to cognitive load and task phase.</p>
+        <p>AI-based predictive tracking could also smooth noisy blink and wink data, potentially helping eye-only techniques approach the foot pedal's reliability. Longitudinal studies are needed to measure visual fatigue over multi-hour surgical procedures.</p>
+      </div>
+      <div class="image-placeholder full-span">
+        <p>A conceptual rendering of the next KARVIMIO interface, combining a wireless smart pedal with refined gaze-tracking UI elements for seamless multimodal interaction.</p>
+        <span>Future of Surgical AR</span>
+      </div>
+    </section>
+
+    <section class="contact project-contact" id="about" aria-label="Contact">
+      <h2>Want to work together?</h2>
+      <p>If you like what you see and want to work together, get in touch!</p>
+      <a href="mailto:prathikp.prasad@gmail.com?subject=Contact%20via%20Portfolio">prathikp.prasad@gmail.com</a>
+    </section>
+  </main>
+
+  <script src="../../script.js"></script>
+</body>
+</html>

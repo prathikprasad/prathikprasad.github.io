@@ -132,7 +132,7 @@ main { overflow: hidden; }
   width: calc(100% - (var(--page-pad) * 2));
   min-height: 378.04px;
   margin: 0 auto;
-  padding-top: 69.91px;
+  padding-top: 10px;
   padding-bottom: 20px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 229.18px;
@@ -268,7 +268,7 @@ main { overflow: hidden; }
   gap: 10px;
   border: 5px solid var(--sand);
   border-radius: var(--radius);
-  padding: 5px 5px 14.9px;
+  padding: 0 0 12px;
   background: var(--white);
   color: var(--black);
   overflow: hidden;
@@ -277,9 +277,9 @@ main { overflow: hidden; }
 .card:hover { opacity: .8; }
 .card:active { opacity: .7; }
 .card[hidden] { display: none; }
-.span-6 { grid-column: span 6; min-height: 340.82px; }
-.span-4 { grid-column: span 4; min-height: 373.84px; }
-.span-3 { grid-column: span 3; min-height: 340.82px; }
+.span-6 { grid-column: span 6; }
+.span-4 { grid-column: span 4; }
+.span-3 { grid-column: span 3; }
 .card-media {
   width: 100%;
   height: 200px;
@@ -328,9 +328,9 @@ main { overflow: hidden; }
   border: 8px solid #111;
 }
 .card-body {
-  padding: 10px;
+  padding: 10px 15px 0;
 }
-.card.compact .card-body { padding: 10px; }
+.card.compact .card-body { padding: 10px 15px 0; }
 .card h3 {
   margin: 0;
   font-size: 17px;
@@ -391,8 +391,8 @@ main { overflow: hidden; }
   line-height: 19.2px;
   font-weight: 400;
 }
-.experiment-grid .card { grid-column: span 3; min-height: 425.82px; padding-bottom: 30.9px; }
-.experiment-grid .card-body { padding: 10px; }
+.experiment-grid .card { grid-column: span 3; min-height: 425.82px; padding-bottom: 25px; }
+.experiment-grid .card-body { padding: 10px 15px 0; }
 .avatar-badge {
   position: absolute;
   top: 5px;
@@ -596,6 +596,83 @@ main { overflow: hidden; }
   width: 58px;
   height: 58px;
   object-fit: contain;
+}
+.principle-icon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--inner-radius);
+  background: var(--sand);
+  color: var(--black);
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+}
+.image-placeholder {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px;
+  border: 5px dashed #d8d8d8;
+  border-radius: 15px;
+  background: var(--sand);
+  color: var(--black);
+}
+.image-placeholder p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+.image-placeholder span {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+}
+.placeholder-media {
+  width: min(100%, 360px);
+  height: auto;
+}
+.placeholder-media .image-placeholder {
+  width: 100%;
+  min-height: 300px;
+}
+.metric-section {
+  background: var(--white);
+}
+.metric-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 5px solid var(--sand);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+.metric-card strong {
+  color: var(--black);
+  font-size: 64px;
+  line-height: 78px;
+  font-weight: 700;
+}
+.metric-card span {
+  color: var(--black);
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.metric-card p {
+  margin: 0;
+  color: var(--black);
+  font-size: 14px;
+  line-height: 20px;
 }
 .pipeline-grid {
   display: grid;

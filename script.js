@@ -2,7 +2,7 @@ const projectCards = [
   {
     title: 'Augmented Reality Tool Assembly Guidance:',
     description: 'Research, Development and Evaluation of AR Gaze UI, 3D In-Situ Assembly Animations and AR UI Gaze Selection Techniques',
-    url: 'https://prathikprasad.webflow.io/projects/ar',
+    url: 'projects/ar/',
     image: 'assets/ar-tool-assembly.webp',
     imageClass: 'contain top',
     span: 6,
