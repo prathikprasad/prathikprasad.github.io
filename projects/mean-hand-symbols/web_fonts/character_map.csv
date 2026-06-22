@@ -1,0 +1,397 @@
+character,name,unicode,css_escape,category
+A,latin_upper_A,U+0041,\41,Latin letters and numbers
+B,latin_upper_B,U+0042,\42,Latin letters and numbers
+C,latin_upper_C,U+0043,\43,Latin letters and numbers
+D,latin_upper_D,U+0044,\44,Latin letters and numbers
+E,latin_upper_E,U+0045,\45,Latin letters and numbers
+F,latin_upper_F,U+0046,\46,Latin letters and numbers
+G,latin_upper_G,U+0047,\47,Latin letters and numbers
+H,latin_upper_H,U+0048,\48,Latin letters and numbers
+I,latin_upper_I,U+0049,\49,Latin letters and numbers
+J,latin_upper_J,U+004A,\4A,Latin letters and numbers
+K,latin_upper_K,U+004B,\4B,Latin letters and numbers
+L,latin_upper_L,U+004C,\4C,Latin letters and numbers
+M,latin_upper_M,U+004D,\4D,Latin letters and numbers
+N,latin_upper_N,U+004E,\4E,Latin letters and numbers
+O,latin_upper_O,U+004F,\4F,Latin letters and numbers
+P,latin_upper_P,U+0050,\50,Latin letters and numbers
+Q,latin_upper_Q,U+0051,\51,Latin letters and numbers
+R,latin_upper_R,U+0052,\52,Latin letters and numbers
+S,latin_upper_S,U+0053,\53,Latin letters and numbers
+T,latin_upper_T,U+0054,\54,Latin letters and numbers
+U,latin_upper_U,U+0055,\55,Latin letters and numbers
+V,latin_upper_V,U+0056,\56,Latin letters and numbers
+W,latin_upper_W,U+0057,\57,Latin letters and numbers
+X,latin_upper_X,U+0058,\58,Latin letters and numbers
+Y,latin_upper_Y,U+0059,\59,Latin letters and numbers
+Z,latin_upper_Z,U+005A,\5A,Latin letters and numbers
+→,rightarrow,U+2192,\2192,Arrows
+0,0,U+0030,\30,Latin letters and numbers
+1,1,U+0031,\31,Latin letters and numbers
+2,2,U+0032,\32,Latin letters and numbers
+3,3,U+0033,\33,Latin letters and numbers
+4,4,U+0034,\34,Latin letters and numbers
+5,5,U+0035,\35,Latin letters and numbers
+6,6,U+0036,\36,Latin letters and numbers
+7,7,U+0037,\37,Latin letters and numbers
+8,8,U+0038,\38,Latin letters and numbers
+9,9,U+0039,\39,Latin letters and numbers
+π,greek_lower_pi,U+03C0,\3C0,Greek alphabet
+α,greek_lower_alpha,U+03B1,\3B1,Greek alphabet
+β,greek_lower_beta,U+03B2,\3B2,Greek alphabet
+∑,sum,U+2211,\2211,Calculus and large operators
+σ,greek_lower_sigma,U+03C3,\3C3,Greek alphabet
+a,latin_lower_a,U+0061,\61,Latin letters and numbers
+b,latin_lower_b,U+0062,\62,Latin letters and numbers
+c,latin_lower_c,U+0063,\63,Latin letters and numbers
+d,latin_lower_d,U+0064,\64,Latin letters and numbers
+e,latin_lower_e,U+0065,\65,Latin letters and numbers
+f,latin_lower_f,U+0066,\66,Latin letters and numbers
+g,latin_lower_g,U+0067,\67,Latin letters and numbers
+h,latin_lower_h,U+0068,\68,Latin letters and numbers
+i,latin_lower_i,U+0069,\69,Latin letters and numbers
+j,latin_lower_j,U+006A,\6A,Latin letters and numbers
+k,latin_lower_k,U+006B,\6B,Latin letters and numbers
+l,latin_lower_l,U+006C,\6C,Latin letters and numbers
+m,latin_lower_m,U+006D,\6D,Latin letters and numbers
+n,latin_lower_n,U+006E,\6E,Latin letters and numbers
+o,latin_lower_o,U+006F,\6F,Latin letters and numbers
+p,latin_lower_p,U+0070,\70,Latin letters and numbers
+q,latin_lower_q,U+0071,\71,Latin letters and numbers
+r,latin_lower_r,U+0072,\72,Latin letters and numbers
+s,latin_lower_s,U+0073,\73,Latin letters and numbers
+u,latin_lower_u,U+0075,\75,Latin letters and numbers
+v,latin_lower_v,U+0076,\76,Latin letters and numbers
+w,latin_lower_w,U+0077,\77,Latin letters and numbers
+x,latin_lower_x,U+0078,\78,Latin letters and numbers
+y,latin_lower_y,U+0079,\79,Latin letters and numbers
+z,latin_lower_z,U+007A,\7A,Latin letters and numbers
+Σ,greek_upper_Sigma,U+03A3,\3A3,Greek alphabet
+γ,greek_lower_gamma,U+03B3,\3B3,Greek alphabet
+Γ,greek_upper_Gamma,U+0393,\393,Greek alphabet
+δ,greek_lower_delta,U+03B4,\3B4,Greek alphabet
+Δ,greek_upper_Delta,U+0394,\394,Greek alphabet
+ζ,greek_lower_zeta,U+03B6,\3B6,Greek alphabet
+η,greek_lower_eta,U+03B7,\3B7,Greek alphabet
+θ,greek_lower_theta,U+03B8,\3B8,Greek alphabet
+Θ,greek_upper_Theta,U+0398,\398,Greek alphabet
+ε,greek_lower_epsilon,U+03B5,\3B5,Greek alphabet
+ϵ,greek_lower_varepsilon,U+03F5,\3F5,Greek alphabet
+ι,greek_lower_iota,U+03B9,\3B9,Greek alphabet
+κ,greek_lower_kappa,U+03BA,\3BA,Greek alphabet
+ϰ,greek_lower_varkappa,U+03F0,\3F0,Greek alphabet
+λ,greek_lower_lambda,U+03BB,\3BB,Greek alphabet
+Λ,greek_upper_Lambda,U+039B,\39B,Greek alphabet
+μ,greek_lower_mu,U+03BC,\3BC,Greek alphabet
+ν,greek_lower_nu,U+03BD,\3BD,Greek alphabet
+ξ,greek_lower_xi,U+03BE,\3BE,Greek alphabet
+Ξ,greek_upper_Xi,U+039E,\39E,Greek alphabet
+Π,greek_upper_Pi,U+03A0,\3A0,Greek alphabet
+ρ,greek_lower_rho,U+03C1,\3C1,Greek alphabet
+ϱ,greek_lower_varrho,U+03F1,\3F1,Greek alphabet
+τ,greek_lower_tau,U+03C4,\3C4,Greek alphabet
+φ,greek_lower_phi,U+03C6,\3C6,Greek alphabet
+Φ,greek_upper_Phi,U+03A6,\3A6,Greek alphabet
+ϕ,greek_lower_varphi,U+03D5,\3D5,Greek alphabet
+χ,greek_lower_chi,U+03C7,\3C7,Greek alphabet
+ψ,greek_lower_psi,U+03C8,\3C8,Greek alphabet
+Ψ,greek_upper_Psi,U+03A8,\3A8,Greek alphabet
+ω,greek_lower_omega,U+03C9,\3C9,Greek alphabet
+Ω,greek_upper_Omega,U+03A9,\3A9,Greek alphabet
+∂,partial,U+2202,\2202,Calculus and large operators
+∫,int,U+222B,\222B,Calculus and large operators
+ċ,cdot,U+010B,\10B,Basic operators
+≤,leq,U+2264,\2264,Relations and comparison symbols
+≥,geq,U+2265,\2265,Relations and comparison symbols
+<,less_than,U+003C,\3C,Relations and comparison symbols
+>,greater_than,U+003E,\3E,Relations and comparison symbols
+⊂,subset,U+2282,\2282,Set theory and logic
+⊃,supset,U+2283,\2283,Set theory and logic
+⊆,subseteq,U+2286,\2286,Set theory and logic
+⊇,supseteq,U+2287,\2287,Set theory and logic
+≅,cong,U+2245,\2245,Relations and comparison symbols
+∝,propto,U+221D,\221D,Relations and comparison symbols
+-,minus,U+002D,\2D,Basic operators
++,plus,U+002B,\2B,Basic operators
+ℝ,mathbb_R,U+211D,\211D,Styled alphabets
+$,dollar,U+0024,\24,"Currency, legal, and text symbols"
+{,left_brace,U+007B,\7B,Brackets and delimiters
+©,copyright,U+00A9,\A9,"Currency, legal, and text symbols"
+…,dots,U+2026,\2026,Dots and ellipses
+},right_brace,U+007D,\7D,Brackets and delimiters
+§,S,U+00A7,\A7,"Currency, legal, and text symbols"
+†,dag,U+2020,\2020,"Currency, legal, and text symbols"
+£,pounds,U+00A3,\A3,"Currency, legal, and text symbols"
+&,ampersand,U+0026,\26,"Currency, legal, and text symbols"
+#,hash,U+0023,\23,"Currency, legal, and text symbols"
+%,percent,U+0025,\25,"Currency, legal, and text symbols"
+✓,checkmark,U+2713,\2713,Geometric and shape symbols
+®,circledR,U+00AE,\AE,"Currency, legal, and text symbols"
+§,mathsection,U+E000,\E000,"Currency, legal, and text symbols"
+⨿,amalg,U+2A3F,\2A3F,Basic operators
+∪,cup,U+222A,\222A,Set theory and logic
+⊕,oplus,U+2295,\2295,Basic operators
+×,times,U+00D7,\D7,Basic operators
+*,ast,U+002A,\2A,Basic operators
+◃,triangleleft,U+25C3,\25C3,Geometric and shape symbols
+⊗,otimes,U+2297,\2297,Basic operators
+▹,triangleright,U+25B9,\25B9,Geometric and shape symbols
+⋄,diamond,U+22C4,\22C4,Geometric and shape symbols
+±,pm,U+00B1,\B1,Basic operators
+÷,div,U+00F7,\F7,Basic operators
+•,bullet,U+2022,\2022,Basic operators
+∖,setminus,U+2216,\2216,Basic operators
+⊎,uplus,U+228E,\228E,Basic operators
+∩,cap,U+2229,\2229,Set theory and logic
+∓,mp,U+2213,\2213,Basic operators
+⊓,sqcap,U+2293,\2293,Set theory and logic
+∨,vee,U+2228,\2228,Set theory and logic
+⊙,odot,U+2299,\2299,Basic operators
+⊔,sqcup,U+2294,\2294,Set theory and logic
+∧,wedge,U+2227,\2227,Set theory and logic
+ˆ,circ,U+02C6,\2C6,Basic operators
+⊖,ominus,U+2296,\2296,Basic operators
+☆,star,U+2606,\2606,Basic operators
+≀,wr,U+2240,\2240,Basic operators
+⌅,barwedge,U+2305,\2305,Basic operators
+⊚,circledcirc,U+229A,\229A,Basic operators
+⊡,boxdot,U+22A1,\22A1,Basic operators
+⋉,ltimes,U+22C9,\22C9,Basic operators
+⊞,boxplus,U+229E,\229E,Basic operators
+⊠,boxtimes,U+22A0,\22A0,Basic operators
+⋊,rtimes,U+22CA,\22CA,Basic operators
+⊛,circledast,U+229B,\229B,Basic operators
+⊲,lhd,U+22B2,\22B2,Basic operators
+∏,prod,U+220F,\220F,Calculus and large operators
+∐,coprod,U+2210,\2210,Calculus and large operators
+∮,oint,U+222E,\222E,Calculus and large operators
+⅋,parr,U+214B,\214B,Set theory and logic
+&,with,U+E001,\E001,Set theory and logic
+⨍,fint,U+2A0D,\2A0D,Calculus and large operators
+∯,varoiint,U+222F,\222F,Calculus and large operators
+∯,oiint,U+E002,\E002,Calculus and large operators
+≈,approx,U+2248,\2248,Scientific and miscellaneous symbols
+≡,equiv,U+2261,\2261,Relations and comparison symbols
+≢,not_equiv,U+2262,\2262,Relations and comparison symbols
+⊥,perp,U+22A5,\22A5,Relations and comparison symbols
+≈,asymp,U+E003,\E003,Relations and comparison symbols
+⌢,frown,U+2322,\2322,Relations and comparison symbols
+≺,prec,U+227A,\227A,Relations and comparison symbols
+≻,succ,U+227B,\227B,Relations and comparison symbols
+⋈,bowtie,U+22C8,\22C8,Geometric and shape symbols
+⪯,preceq,U+2AAF,\2AAF,Relations and comparison symbols
+⪰,succeq,U+2AB0,\2AB0,Relations and comparison symbols
+∣,mid,U+2223,\2223,Relations and comparison symbols
+⊢,vdash,U+22A2,\22A2,Relations and comparison symbols
+⊣,dashv,U+22A3,\22A3,Relations and comparison symbols
+⊧,models,U+22A7,\22A7,Relations and comparison symbols
+∼,sim,U+223C,\223C,Relations and comparison symbols
+≐,doteq,U+2250,\2250,Relations and comparison symbols
+∥,parallel,U+2225,\2225,Relations and comparison symbols
+≃,simeq,U+2243,\2243,Relations and comparison symbols
+∽,backsim,U+223D,\223D,Relations and comparison symbols
+⊸,multimap,U+22B8,\22B8,Set theory and logic
+⋔,pitchfork,U+22D4,\22D4,Relations and comparison symbols
+∴,therefore,U+2234,\2234,Set theory and logic
+∵,because,U+2235,\2235,Set theory and logic
+≬,between,U+226C,\226C,Relations and comparison symbols
+≼,preccurlyeq,U+227C,\227C,Relations and comparison symbols
+∝,varpropto,U+E004,\E004,Relations and comparison symbols
+⊩,Vdash_2,U+22A9,\22A9,Relations and comparison symbols
+⊨,vDash_3,U+22A8,\22A8,Relations and comparison symbols
+∤,nmid,U+2224,\2224,Relations and comparison symbols
+⊭,nvDash,U+22AD,\22AD,Relations and comparison symbols
+⊑,sqsubseteq,U+2291,\2291,Set theory and logic
+⊈,nsubseteq,U+2288,\2288,Set theory and logic
+⊊,subsetneq,U+228A,\228A,Set theory and logic
+⊊︀,varsubsetneq,U+E005,\E005,Set theory and logic
+≠,neq,U+2260,\2260,Relations and comparison symbols
+⩾,geqslant,U+2A7E,\2A7E,Relations and comparison symbols
+≷,gtrless,U+2277,\2277,Relations and comparison symbols
+≲,lesssim,U+2272,\2272,Relations and comparison symbols
+≳,gtrsim,U+2273,\2273,Relations and comparison symbols
+⩽,leqslant,U+2A7D,\2A7D,Relations and comparison symbols
+⊴,trianglelefteq,U+22B4,\22B4,Geometric and shape symbols
+▸,blacktriangleright,U+25B8,\25B8,Geometric and shape symbols
+≜,triangleq,U+225C,\225C,Geometric and shape symbols
+⇓,Downarrow,U+21D3,\21D3,Arrows
+↓,downarrow_2,U+2193,\2193,Arrows
+⇒,Rightarrow_2,U+21D2,\21D2,Arrows
+↪,hookrightarrow,U+21AA,\21AA,Arrows
+⟺,Longleftrightarrow,U+27FA,\27FA,Arrows
+↘,searrow,U+2198,\2198,Arrows
+⟼,longmapsto,U+27FC,\27FC,Arrows
+←,leftarrow,U+2190,\2190,Arrows
+⟹,Longrightarrow,U+27F9,\27F9,Arrows
+↑,uparrow,U+2191,\2191,Arrows
+⇐,Leftarrow_2,U+21D0,\21D0,Arrows
+⟶,longrightarrow_2,U+27F6,\27F6,Arrows
+⇔,Leftrightarrow,U+21D4,\21D4,Arrows
+↦,mapsto,U+21A6,\21A6,Arrows
+↔,leftrightarrow_2,U+2194,\2194,Arrows
+↗,nearrow,U+2197,\2197,Arrows
+⇌,rightleftharpoons,U+21CC,\21CC,Scientific and miscellaneous symbols
+⇀,rightharpoonup,U+21C0,\21C0,Scientific and miscellaneous symbols
+↝,leadsto,U+219D,\219D,Arrows
+↺,circlearrowleft,U+21BA,\21BA,Arrows
+⇄,rightleftarrows,U+21C4,\21C4,Arrows
+↻,circlearrowright,U+21BB,\21BB,Arrows
+⇉,rightrightarrows,U+21C9,\21C9,Arrows
+↝,rightsquigarrow,U+E006,\E006,Arrows
+↷,curvearrowright,U+21B7,\21B7,Arrows
+↠,twoheadrightarrow,U+21A0,\21A0,Arrows
+⇏,nRightarrow,U+21CF,\21CF,Arrows
+↛,nrightarrow_2,U+219B,\219B,Arrows
+↾,upharpoonright,U+21BE,\21BE,Scientific and miscellaneous symbols
+↤,mapsfrom,U+21A4,\21A4,Arrows
+→,shortrightarrow,U+E007,\E007,Arrows
+↯,lightning,U+21AF,\21AF,Scientific and miscellaneous symbols
+ϑ,greek_lower_vartheta,U+03D1,\3D1,Greek alphabet
+ϖ,greek_lower_varpi,U+03D6,\3D6,Greek alphabet
+⊥,bot,U+E008,\E008,Scientific and miscellaneous symbols
+∀,forall,U+2200,\2200,Set theory and logic
+∋,ni,U+220B,\220B,Set theory and logic
+⊤,top,U+22A4,\22A4,Scientific and miscellaneous symbols
+ℓ,ell,U+2113,\2113,Scientific and miscellaneous symbols
+ℏ,hbar,U+210F,\210F,Scientific and miscellaneous symbols
+∈,in,U+2208,\2208,Set theory and logic
+∉,notin,U+2209,\2209,Set theory and logic
+℘,wp,U+2118,\2118,Scientific and miscellaneous symbols
+∃,exists,U+2203,\2203,Set theory and logic
+ℑ,Im,U+2111,\2111,Scientific and miscellaneous symbols
+ℜ,Re,U+211C,\211C,Scientific and miscellaneous symbols
+∄,nexists,U+2204,\2204,Set theory and logic
+⟨,langle,U+27E8,\27E8,Brackets and delimiters
+⟩,rangle,U+27E9,\27E9,Brackets and delimiters
+⌈,lceil,U+2308,\2308,Brackets and delimiters
+⌉,rceil,U+2309,\2309,Brackets and delimiters
+⌊,lfloor,U+230A,\230A,Brackets and delimiters
+⌋,rfloor,U+230B,\230B,Brackets and delimiters
+[,left_bracket,U+005B,\5B,Brackets and delimiters
+],right_bracket,U+005D,\5D,Brackets and delimiters
+|,vertical_bar,U+007C,\7C,Brackets and delimiters
+‖,double_vertical_bar,U+2016,\2016,Brackets and delimiters
+/,slash,U+002F,\2F,Brackets and delimiters
+⟦,llbracket,U+27E6,\27E6,Brackets and delimiters
+⟧,rrbracket,U+27E7,\27E7,Brackets and delimiters
+⋮,vdots,U+22EE,\22EE,Dots and ellipses
+⋱,ddots,U+22F1,\22F1,Dots and ellipses
+⋯,dotsc,U+22EF,\22EF,Dots and ellipses
+ℵ,aleph,U+2135,\2135,Scientific and miscellaneous symbols
+∞,infty,U+221E,\221E,Calculus and large operators
+′,prime,U+2032,\2032,Scientific and miscellaneous symbols
+∠,angle,U+2220,\2220,Geometric and shape symbols
+♦,diamondsuit,U+2666,\2666,Geometric and shape symbols
+♯,sharp,U+266F,\266F,Scientific and miscellaneous symbols
+\,backslash,U+005C,\5C,Brackets and delimiters
+∅,emptyset,U+2205,\2205,Set theory and logic
+∇,nabla,U+2207,\2207,Calculus and large operators
+♭,flat,U+266D,\266D,Scientific and miscellaneous symbols
+♣,clubsuit,U+2663,\2663,Geometric and shape symbols
+♥,heartsuit,U+2665,\2665,Geometric and shape symbols
+¬,neg,U+00AC,\AC,Set theory and logic
+▵,triangle,U+25B5,\25B5,Geometric and shape symbols
+√,sqrt,U+221A,\221A,Calculus and large operators
+∢,sphericalangle,U+2222,\2222,Geometric and shape symbols
+□,square,U+25A1,\25A1,Geometric and shape symbols
+▿,triangledown,U+25BF,\25BF,Geometric and shape symbols
+▪,blacksquare,U+25AA,\25AA,Geometric and shape symbols
+◊,lozenge,U+25CA,\25CA,Geometric and shape symbols
+∅,varnothing,U+E009,\E009,Set theory and logic
+△,vartriangle,U+25B3,\25B3,Geometric and shape symbols
+⋰,iddots,U+22F0,\22F0,Dots and ellipses
+A,mathcal_A,U+E00A,\E00A,Styled alphabets
+B,mathcal_B,U+E00B,\E00B,Styled alphabets
+C,mathcal_C,U+E00C,\E00C,Styled alphabets
+D,mathcal_D,U+E00D,\E00D,Styled alphabets
+E,mathcal_E,U+E00E,\E00E,Styled alphabets
+F,mathcal_F,U+E00F,\E00F,Styled alphabets
+G,mathcal_G,U+E010,\E010,Styled alphabets
+H,mathcal_H,U+E011,\E011,Styled alphabets
+L,mathcal_L,U+E012,\E012,Styled alphabets
+M,mathcal_M,U+E013,\E013,Styled alphabets
+N,mathcal_N,U+E014,\E014,Styled alphabets
+O,mathcal_O,U+E015,\E015,Styled alphabets
+P,mathcal_P,U+E016,\E016,Styled alphabets
+R,mathcal_R,U+E017,\E017,Styled alphabets
+S,mathcal_S,U+E018,\E018,Styled alphabets
+T,mathcal_T,U+E019,\E019,Styled alphabets
+U,mathcal_U,U+E01A,\E01A,Styled alphabets
+X,mathcal_X,U+E01B,\E01B,Styled alphabets
+Z,mathcal_Z,U+E01C,\E01C,Styled alphabets
+A,mathfrak_A,U+E01D,\E01D,Styled alphabets
+M,mathfrak_M,U+E01E,\E01E,Styled alphabets
+S,mathfrak_S,U+E01F,\E01F,Styled alphabets
+X,mathfrak_X,U+E020,\E020,Styled alphabets
+𝟙,mathbb_1,U+1D7D9,\1D7D9,Styled alphabets
+1,mathds_1,U+E021,\E021,Styled alphabets
+C,mathds_C,U+E022,\E022,Styled alphabets
+E,mathds_E,U+E023,\E023,Styled alphabets
+N,mathds_N,U+E024,\E024,Styled alphabets
+P,mathds_P,U+E025,\E025,Styled alphabets
+Q,mathds_Q,U+E026,\E026,Styled alphabets
+R,mathds_R,U+E027,\E027,Styled alphabets
+Z,mathds_Z,U+E028,\E028,Styled alphabets
+A,mathscr_A,U+E029,\E029,Styled alphabets
+C,mathscr_C,U+E02A,\E02A,Styled alphabets
+D,mathscr_D,U+E02B,\E02B,Styled alphabets
+E,mathscr_E,U+E02C,\E02C,Styled alphabets
+F,mathscr_F,U+E02D,\E02D,Styled alphabets
+H,mathscr_H,U+E02E,\E02E,Styled alphabets
+L,mathscr_L,U+E02F,\E02F,Styled alphabets
+P,mathscr_P,U+E030,\E030,Styled alphabets
+S,mathscr_S,U+E031,\E031,Styled alphabets
+℃,celsius,U+2103,\2103,"Currency, legal, and text symbols"
+°,degree,U+00B0,\B0,"Currency, legal, and text symbols"
+Ω,ohm,U+E032,\E032,"Currency, legal, and text symbols"
+♀,venus,U+2640,\2640,Geometric and shape symbols
+♂,mars,U+2642,\2642,Geometric and shape symbols
+☉,astrosun,U+2609,\2609,Geometric and shape symbols
+●,fullmoon,U+25CF,\25CF,Geometric and shape symbols
+◐,leftmoon,U+25D0,\25D0,Geometric and shape symbols
+♀,female,U+E033,\E033,Scientific and miscellaneous symbols
+♂,male,U+E034,\E034,Scientific and miscellaneous symbols
+✓,checked,U+E035,\E035,Geometric and shape symbols
+⌀,diameter,U+2300,\2300,Geometric and shape symbols
+☀,sun,U+2600,\2600,Geometric and shape symbols
+⋈,Bowtie_2,U+E036,\E036,Geometric and shape symbols
+ℚ,mathbb_Q,U+211A,\211A,Styled alphabets
+ℕ,mathbb_N,U+2115,\2115,Styled alphabets
+ℤ,mathbb_Z,U+2124,\2124,Styled alphabets
+ℍ,mathbb_H,U+210D,\210D,Styled alphabets
+ß,ss,U+00DF,\DF,"Currency, legal, and text symbols"
+å,a_ring_lower,U+00E5,\E5,"Currency, legal, and text symbols"
+Ł,L,U+0141,\141,"Currency, legal, and text symbols"
+Å,A_ring_upper,U+00C5,\C5,"Currency, legal, and text symbols"
+Ø,O_slash_upper,U+00D8,\D8,"Currency, legal, and text symbols"
+ø,o_slash_lower,U+00F8,\F8,"Currency, legal, and text symbols"
+æ,ae_lower,U+00E6,\E6,"Currency, legal, and text symbols"
+Æ,AE_upper,U+00C6,\C6,"Currency, legal, and text symbols"
+«,guillemotleft,U+00AB,\AB,"Currency, legal, and text symbols"
+!,exclamation,U+0021,\21,"Currency, legal, and text symbols"
+(,left_parenthesis,U+0028,\28,Brackets and delimiters
+),right_parenthesis,U+0029,\29,Brackets and delimiters
+",",comma,U+002C,\2C,"Currency, legal, and text symbols"
+=,equals,U+003D,\3D,Relations and comparison symbols
+cos,cos,U+E037,\E037,Scientific and miscellaneous symbols
+sin,sin,U+E038,\E038,Scientific and miscellaneous symbols
+tan,tan,U+E039,\E039,Scientific and miscellaneous symbols
+log,log,U+E03A,\E03A,Scientific and miscellaneous symbols
+lim,lim,U+E03B,\E03B,Scientific and miscellaneous symbols
+?,question,U+003F,\3F,"Currency, legal, and text symbols"
+.,period,U+002E,\2E,Dots and ellipses
+;,semicolon,U+003B,\3B,"Currency, legal, and text symbols"
+:,colon,U+003A,\3A,"Currency, legal, and text symbols"
+',apostrophe,U+0027,\27,"Currency, legal, and text symbols"
+"""",quote,U+0022,\22,"Currency, legal, and text symbols"
+@,at,U+0040,\40,"Currency, legal, and text symbols"
+¿,inverted_question,U+00BF,\BF,"Currency, legal, and text symbols"
+¡,inverted_exclamation,U+00A1,\A1,"Currency, legal, and text symbols"
+€,euro,U+20AC,\20AC,"Currency, legal, and text symbols"
+ü,latin_lower_u_diaeresis,U+00FC,\FC,Latin letters and numbers
+Ü,latin_upper_u_diaeresis,U+00DC,\DC,Latin letters and numbers
+t,latin_lower_t,U+0074,\74,Latin letters and numbers
+Ä,latin_upper_a_diaeresis,U+00C4,\C4,Latin letters and numbers
+ä,latin_lower_a_diaeresis,U+00E4,\E4,Latin letters and numbers
+Ö,latin_upper_o_diaeresis,U+00D6,\D6,Latin letters and numbers
+ö,latin_lower_o_diaeresis,U+00F6,\F6,Latin letters and numbers

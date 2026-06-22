@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="856" height="112" viewBox="0 0 856 112">
+  <title>μ</title>
+  <g id="glyph_greek_lower_mu" data-kind="character">
+    <g id="weight_black" data-kind="weight">
+      <title>Black</title>
+      <path d="M 0 25 L 1 25 L 1 24 L 2 24 L 2 21 L 3 21 L 3 20 L 4 20 L 4 17 L 5 17 L 5 12 L 6 12 L 6 2 L 7 2 L 7 0 L 30 0 L 30 1 L 31 1 L 31 3 L 32 3 L 32 20 L 31 20 L 31 22 L 30 22 L 30 23 L 28 23 L 28 24 L 27 24 L 27 23 L 25 23 L 25 24 L 23 24 L 23 25 L 22 25 L 22 24 L 16 24 L 16 25 L 13 25 L 13 27 L 12 27 L 12 29 L 11 29 L 11 32 L 0 32 Z" transform="translate(48.0000 12.0000) scale(1.750000)" fill="#000" fill-rule="evenodd" data-source-pixels="733"/>
+      <text x="76.0" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">black</text>
+    </g>
+    <g id="weight_extra_bold" data-kind="weight">
+      <title>Extra Bold</title>
+      <path d="M 13 25 L 12 25 L 12 27 L 11 27 L 11 29 L 10 29 L 10 32 L 0 32 L 0 27 L 1 27 L 1 26 L 2 26 L 2 24 L 3 24 L 3 22 L 4 22 L 4 20 L 5 20 L 5 16 L 6 16 L 6 10 L 7 10 L 7 2 L 8 2 L 8 0 L 28 0 L 28 1 L 30 1 L 30 3 L 31 3 L 31 15 L 30 15 L 30 19 L 29 19 L 29 20 L 27 20 L 27 21 L 23 21 L 23 22 L 20 22 L 20 21 L 19 21 L 19 22 L 16 22 L 16 23 L 14 23 L 14 24 L 13 24 Z" transform="translate(136.0000 12.0000) scale(1.750000)" fill="#000" fill-rule="evenodd" data-source-pixels="630"/>
+      <text x="164.0" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">extra bold</text>
+    </g>
+    <g id="weight_bold" data-kind="weight">
+      <title>Bold</title>
+      <path d="M 0 32 L 0 28 L 1 28 L 1 27 L 2 27 L 2 26 L 3 26 L 3 24 L 4 24 L 4 22 L 5 22 L 5 19 L 6 19 L 6 14 L 7 14 L 7 8 L 8 8 L 8 2 L 9 2 L 9 1 L 10 1 L 10 0 L 26 0 L 26 1 L 29 1 L 29 3 L 30 3 L 30 15 L 29 15 L 29 18 L 28 18 L 28 19 L 26 19 L 26 20 L 18 20 L 18 21 L 13 21 L 13 23 L 12 23 L 12 25 L 11 25 L 11 27 L 10 27 L 10 30 L 9 30 L 9 32 Z" transform="translate(224.0000 12.0000) scale(1.750000)" fill="#000" fill-rule="evenodd" data-source-pixels="552"/>
+      <text x="252.0" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">bold</text>
+    </g>
+    <g id="weight_semi_bold" data-kind="weight">
+      <title>Semi Bold</title>
+      <path d="M 9 31 L 8 31 L 8 32 L 1 32 L 1 28 L 2 28 L 2 27 L 3 27 L 3 25 L 4 25 L 4 23 L 5 23 L 5 20 L 6 20 L 6 17 L 7 17 L 7 11 L 8 11 L 8 5 L 9 5 L 9 2 L 10 2 L 10 0 L 18 0 L 18 1 L 27 1 L 27 2 L 28 2 L 28 3 L 29 3 L 29 15 L 28 15 L 28 16 L 27 16 L 27 18 L 26 18 L 26 19 L 17 19 L 17 20 L 15 20 L 15 19 L 14 19 L 14 20 L 13 20 L 13 22 L 12 22 L 12 23 L 11 23 L 11 26 L 10 26 L 10 28 L 9 28 Z" transform="translate(312.0000 12.0000) scale(1.750000)" fill="#000" fill-rule="evenodd" data-source-pixels="481"/>
+      <text x="340.0" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">semi bold</text>
+    </g>
+    <g id="weight_medium" data-kind="weight">
+      <title>Medium</title>
+      <path d="M 20 2 L 20 3 L 21 3 L 21 2 L 28 2 L 28 5 L 29 5 L 29 6 L 28 6 L 28 7 L 29 7 L 29 11 L 28 11 L 28 14 L 27 14 L 27 16 L 26 16 L 26 17 L 25 17 L 25 18 L 18 18 L 18 19 L 15 19 L 15 18 L 14 18 L 14 19 L 13 19 L 13 21 L 12 21 L 12 23 L 11 23 L 11 25 L 10 25 L 10 27 L 9 27 L 9 29 L 8 29 L 8 32 L 2 32 L 2 30 L 3 30 L 3 28 L 4 28 L 4 25 L 5 25 L 5 22 L 6 22 L 6 19 L 7 19 L 7 14 L 8 14 L 8 9 L 9 9 L 9 5 L 10 5 L 10 1 L 11 1 L 11 0 L 17 0 L 17 1 L 18 1 L 18 2 Z" transform="translate(400.0000 12.0000) scale(1.750000)" fill="#000" fill-rule="evenodd" data-source-pixels="414"/>
+      <text x="428.0" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">medium</text>
+    </g>
+    <g id="weight_regular" data-kind="weight">
+      <title>Regular</title>
+      <path d="M 17 17 L 17 18 L 13 18 L 13 20 L 12 20 L 12 22 L 11 22 L 11 24 L 10 24 L 10 25 L 9 25 L 9 28 L 8 28 L 8 30 L 7 30 L 7 32 L 2 32 L 2 31 L 3 31 L 3 30 L 4 30 L 4 27 L 5 27 L 5 24 L 6 24 L 6 20 L 7 20 L 7 17 L 8 17 L 8 12 L 9 12 L 9 6 L 10 6 L 10 3 L 11 3 L 11 1 L 15 1 L 15 0 L 16 0 L 16 1 L 17 1 L 17 3 L 18 3 L 18 4 L 19 4 L 19 6 L 20 6 L 20 4 L 21 4 L 21 3 L 22 3 L 22 2 L 25 2 L 25 3 L 27 3 L 27 4 L 28 4 L 28 11 L 27 11 L 27 15 L 26 15 L 26 16 L 25 16 L 25 17 Z" transform="translate(488.0000 12.0000) scale(1.750000)" fill="#000" fill-rule="evenodd" data-source-pixels="348"/>
+      <text x="516.0" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">regular</text>
+    </g>
+    <g id="weight_light" data-kind="weight">
+      <title>Light</title>
+      <path d="M 12 3 L 12 2 L 14 2 L 14 1 L 16 1 L 16 3 L 17 3 L 17 6 L 18 6 L 18 7 L 17 7 L 17 8 L 18 8 L 18 9 L 19 9 L 19 8 L 20 8 L 20 6 L 21 6 L 21 4 L 22 4 L 22 3 L 26 3 L 26 4 L 27 4 L 27 13 L 26 13 L 26 15 L 25 15 L 25 16 L 21 16 L 21 17 L 13 17 L 13 19 L 12 19 L 12 21 L 11 21 L 11 22 L 10 22 L 10 25 L 9 25 L 9 27 L 8 27 L 8 29 L 7 29 L 7 31 L 6 31 L 6 32 L 3 32 L 3 31 L 4 31 L 4 29 L 5 29 L 5 27 L 6 27 L 6 22 L 7 22 L 7 19 L 8 19 L 8 14 L 9 14 L 9 10 L 10 10 L 10 5 L 11 5 L 11 3 Z" transform="translate(576.0000 12.0000) scale(1.750000)" fill="#000" fill-rule="evenodd" data-source-pixels="279"/>
+      <text x="604.0" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">light</text>
+    </g>
+    <g id="weight_extra_light" data-kind="weight">
+      <title>Extra Light</title>
+      <path d="M 19 10 L 20 10 L 20 8 L 21 8 L 21 6 L 22 6 L 22 5 L 23 5 L 23 4 L 25 4 L 25 5 L 26 5 L 26 8 L 27 8 L 27 11 L 26 11 L 26 14 L 25 14 L 25 15 L 21 15 L 21 16 L 17 16 L 17 15 L 16 15 L 16 16 L 14 16 L 14 17 L 13 17 L 13 18 L 12 18 L 12 20 L 11 20 L 11 22 L 10 22 L 10 24 L 9 24 L 9 26 L 8 26 L 8 28 L 7 28 L 7 29 L 5 29 L 5 28 L 6 28 L 6 25 L 7 25 L 7 20 L 8 20 L 8 17 L 9 17 L 9 12 L 10 12 L 10 7 L 11 7 L 11 4 L 13 4 L 13 3 L 16 3 L 16 6 L 17 6 L 17 10 L 18 10 L 18 11 L 19 11 Z" transform="translate(664.0000 12.0000) scale(1.750000)" fill="#000" fill-rule="evenodd" data-source-pixels="206"/>
+      <text x="692.0" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">extra light</text>
+    </g>
+    <g id="weight_thin" data-kind="weight">
+      <title>Thin</title>
+      <path d="M 15 5 L 16 5 L 16 14 L 15 14 L 15 15 L 14 15 L 14 16 L 13 16 L 13 17 L 12 17 L 12 19 L 11 19 L 11 21 L 10 21 L 10 23 L 9 23 L 9 24 L 8 24 L 8 26 L 7 26 L 7 22 L 8 22 L 8 18 L 9 18 L 9 13 L 10 13 L 10 9 L 11 9 L 11 6 L 12 6 L 12 5 L 13 5 L 13 4 L 15 4 Z M 25 13 L 25 14 L 24 14 L 24 15 L 23 15 L 23 14 L 22 14 L 22 15 L 20 15 L 20 10 L 21 10 L 21 7 L 22 7 L 22 6 L 23 6 L 23 5 L 24 5 L 24 6 L 25 6 L 25 7 L 26 7 L 26 13 Z" transform="translate(752.0000 12.0000) scale(1.750000)" fill="#000" fill-rule="evenodd" data-source-pixels="134"/>
+      <text x="780.0" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">thin</text>
+    </g>
+  </g>
+</svg>

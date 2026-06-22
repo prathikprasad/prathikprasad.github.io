@@ -11,7 +11,7 @@ const projectCards = [
   },
   {
     title: 'Augmented Reality 3D Viewer:',
-    description: 'View 3D models in AR using a smartphone',
+    description: 'A Zero-to-One Web Augmented Reality Experience in a Museum',
     url: 'projects/everllence/',
     image: 'assets/everllence-ar-viewer.gif',
     imageClass: 'cover',
@@ -38,6 +38,16 @@ const projectCards = [
     span: 4,
     categories: ['arxr'],
     tags: ['Virtual Reality', 'User Experience', 'Figma', 'Power BI', 'Data Visualisation']
+  },
+  {
+    title: 'Mean Hand Symbols:',
+    description: 'A mathematical symbol system written by no single hand',
+    url: 'projects/mean-hand-symbols/',
+    image: 'assets/mean-hand-symbols/regular.svg',
+    imageClass: 'contain',
+    span: 4,
+    categories: ['graphic'],
+    tags: ['Experimental Typeface', 'Python', 'ChatGPT Codex', 'AI Coding Assistant']
   },
   {
     title: 'Here & Now:',

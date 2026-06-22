@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Mean Hand Symbols';
+  src: url('mean_hand_symbols_thin.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mean Hand Symbols';
+  src: url('mean_hand_symbols_extra_light.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mean Hand Symbols';
+  src: url('mean_hand_symbols_light.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mean Hand Symbols';
+  src: url('mean_hand_symbols_regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mean Hand Symbols';
+  src: url('mean_hand_symbols_medium.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mean Hand Symbols';
+  src: url('mean_hand_symbols_semi_bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mean Hand Symbols';
+  src: url('mean_hand_symbols_bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mean Hand Symbols';
+  src: url('mean_hand_symbols_extra_bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mean Hand Symbols';
+  src: url('mean_hand_symbols_black.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}

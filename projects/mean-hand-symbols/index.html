@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mean Hand Symbols</title>
+  <meta name="description" content="Mean Hand Symbols, a mathematical typeface made from averaged handwriting datasets." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="../../assets/favicon.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="web_fonts/mean_hand_symbols.css" />
+</head>
+<body class="project-page">
+  <div class="cursor-wrapper" aria-hidden="true"><div class="cursor"></div></div>
+
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="Prathik Prasad home">Prathik Prasad</a>
+    <nav class="nav" id="primaryNav" aria-label="Primary navigation">
+      <a class="nav-pill active" href="../../index.html#work">Work</a>
+      <a class="nav-pill muted" href="../../index.html#about">About</a>
+      <a class="linkedin" href="https://www.linkedin.com/in/prathikprasad/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile"><img src="../../assets/linkedin.svg" alt="" /></a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu"><img src="../../assets/menu-icon.png" alt="" /></button>
+  </header>
+
+  <main id="top" class="case-study">
+    <section class="case-panel case-hero">
+      <p class="case-kicker">2026 &middot; Experimental type system</p>
+      <h1>Mean Hand Symbols</h1>
+    </section>
+
+    <section class="case-panel">
+      <p class="font-specimen" aria-label="Mathematical symbol specimen">μ = Σx / n<br />σ² = Σ(x - μ)² / n</p>
+      <p class="font-specimen-label">Collective handwriting &middot; nine levels of consensus</p>
+    </section>
+
+    <section class="case-section two-column">
+      <div class="case-copy"><h2><strong>A mathematical symbol system written by no single hand.</strong></h2></div>
+      <div class="case-copy"><p>Mean Hand Symbols turns thousands of handwritten samples into one coherent visual language. Instead of choosing a single writer's style, the system reveals the forms people share.</p></div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-copy">
+        <h2><strong>From handwriting data to a usable type system</strong></h2>
+        <p>The project combines <a href="https://github.com/MartinThoma/HASY" target="_blank" rel="noreferrer">HASYv2</a>, a <a href="https://www.kaggle.com/datasets/xainano/handwrittenmathsymbols" target="_blank" rel="noreferrer">supplemental handwritten-symbol dataset</a>, and <a href="https://archive.ics.uci.edu/dataset/177/uji+pen+characters" target="_blank" rel="noreferrer">UJI Pen Characters v2</a>. Samples are aligned, averaged into probability maps, and translated into a family of weights, producing one consistent set for digital and vector use.</p>
+        <p>Inspired by Anna Zhang's <a href="https://portfolio.anna-zhang.com/projects/mean-hand" target="_blank" rel="noreferrer">Mean Hand</a>.</p>
+      </div>
+      <div class="font-facts metric-section" aria-label="Project facts">
+        <div class="metric-card"><strong>396</strong><span>Unique characters</span></div>
+        <div class="metric-card"><strong>9</strong><span>Consensus weights</span></div>
+        <div class="metric-card"><strong>3</strong><span>Source datasets</span></div>
+        <div class="metric-card"><strong>396 × 9</strong><span>Editable glyph layers</span></div>
+      </div>
+      <div class="font-meta" aria-label="Project metadata">
+        <div><p><strong>Role</strong><br />Independent UX designer and developer</p></div>
+        <div><p><strong>Focus</strong><br />Visual systems, data-driven typography, interaction design</p></div>
+        <div><p><strong>Tools</strong><br />Python, NumPy, Pillow, fontTools, HTML, CSS, JavaScript</p></div>
+        <div><p><strong>Outputs</strong><br />Webfonts, layered SVGs, probability maps, specimens, interactive gallery</p></div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-copy">
+        <h2><strong>How can many inconsistent marks become one legible system?</strong></h2>
+        <p>Handwritten symbols vary in angle, scale, proportion, and stroke order. Averaging them can create a blur rather than a useful glyph. The challenge was to preserve the character of collective handwriting while making every symbol consistent enough to compare, typeset, and reuse.</p>
+        <p>Align samples without distorting proportions. Preserve meaningful stroke boundaries. Keep fragile marks visible in lighter weights. Fill gaps across the character set. Maintain one clear order across every output.</p>
+      </div>
+      <div class="font-comparison" aria-label="Handwriting samples compared with probability means and weight outputs">
+        <div class="font-comparison-row">
+          <div class="font-comparison-cell"><strong>μ</strong></div>
+          <div class="font-comparison-cell"><div class="sample-stack"><img src="process/mu-samples/v2-02791.png" alt="Handwritten mu sample one" /><img src="process/mu-samples/v2-02792.png" alt="Handwritten mu sample two" /><img src="process/mu-samples/v2-02793.png" alt="Handwritten mu sample three" /></div><span>Samples</span></div>
+          <div class="font-comparison-cell"><img src="process/mu-black.png" alt="Mu at Black weight" /><span>Black</span></div>
+          <div class="font-comparison-cell"><img src="output_remaining/weights/extra_bold/symbol_0164.png" alt="Mu at Extra Bold weight" /><span>Extra Bold</span></div>
+          <div class="font-comparison-cell"><img src="output_remaining/weights/bold/symbol_0164.png" alt="Mu at Bold weight" /><span>Bold</span></div>
+          <div class="font-comparison-cell"><img src="output_remaining/weights/semi_bold/symbol_0164.png" alt="Mu at Semi Bold weight" /><span>Semi Bold</span></div>
+          <div class="font-comparison-cell"><img src="output_remaining/weights/medium/symbol_0164.png" alt="Mu at Medium weight" /><span>Medium</span></div>
+          <div class="font-comparison-cell"><img src="process/mu-regular.png" alt="Mu at Regular weight" /><span>Regular</span></div>
+          <div class="font-comparison-cell"><img src="output_remaining/weights/light/symbol_0164.png" alt="Mu at Light weight" /><span>Light</span></div>
+          <div class="font-comparison-cell"><img src="output_remaining/weights/extra_light/symbol_0164.png" alt="Mu at Extra Light weight" /><span>Extra Light</span></div>
+          <div class="font-comparison-cell"><img src="process/mu-thin.png" alt="Mu at Thin weight" /><span>Thin</span></div>
+        </div>
+        <div class="font-comparison-row">
+          <div class="font-comparison-cell"><strong>?</strong></div>
+          <div class="font-comparison-cell"><div class="sample-stack"><img src="process/question-samples/01_trn_UJI_W01-01.png" alt="Handwritten question mark sample one" /><img src="process/question-samples/02_trn_UJI_W01-02.png" alt="Handwritten question mark sample two" /><img src="process/question-samples/03_trn_UJI_W02-01.png" alt="Handwritten question mark sample three" /></div><span>Samples</span></div>
+          <div class="font-comparison-cell"><img src="process/question-black.png" alt="Question mark at Black weight" /><span>Black</span></div>
+          <div class="font-comparison-cell"><img src="output/weights/extra_bold/question.png" alt="Question mark at Extra Bold weight" /><span>Extra Bold</span></div>
+          <div class="font-comparison-cell"><img src="output/weights/bold/question.png" alt="Question mark at Bold weight" /><span>Bold</span></div>
+          <div class="font-comparison-cell"><img src="output/weights/semi_bold/question.png" alt="Question mark at Semi Bold weight" /><span>Semi Bold</span></div>
+          <div class="font-comparison-cell"><img src="output/weights/medium/question.png" alt="Question mark at Medium weight" /><span>Medium</span></div>
+          <div class="font-comparison-cell"><img src="process/question-regular.png" alt="Question mark at Regular weight" /><span>Regular</span></div>
+          <div class="font-comparison-cell"><img src="output/weights/light/question.png" alt="Question mark at Light weight" /><span>Light</span></div>
+          <div class="font-comparison-cell"><img src="output/weights/extra_light/question.png" alt="Question mark at Extra Light weight" /><span>Extra Light</span></div>
+          <div class="font-comparison-cell"><img src="process/question-thin.png" alt="Question mark at Thin weight" /><span>Thin</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-copy"><h2><strong>One pipeline, four transformations</strong></h2></div>
+    </section>
+    <section class="pipeline-grid font-process" aria-label="Visual pipeline">
+      <article class="pipeline-card"><span>1</span><div class="process-visual"><div class="sample-stack"><img src="process/mu-samples/v2-02791.png" alt="Original mu sample" /><img src="process/mu-samples/v2-02792.png" alt="Aligned mu sample" /><img src="process/mu-samples/v2-02793.png" alt="Centered mu sample" /></div></div><h2><strong>Normalize</strong></h2><p>Each sample is cropped, scaled without changing its proportions, and centered on the same canvas.</p></article>
+      <article class="pipeline-card"><span>2</span><div class="process-visual"><div class="sample-overlay"><img src="process/mu-samples/v2-02791.png" alt="First aligned mu sample" /><img src="process/mu-samples/v2-02792.png" alt="Second aligned mu sample" /><img src="process/mu-samples/v2-02793.png" alt="Third aligned mu sample" /></div></div><h2><strong>Aggregate</strong></h2><p>Aligned samples form a probability map. Darker areas show where writers placed ink most consistently.</p></article>
+      <article class="pipeline-card"><span>3</span><div class="process-visual"><div class="sample-stack"><img src="process/mu-black.png" alt="Black mu" /><img src="process/mu-regular.png" alt="Regular mu" /><img src="process/mu-thin.png" alt="Thin mu" /></div></div><h2><strong>Threshold</strong></h2><p>Black retains more variation, while Thin keeps only the strongest agreement.</p></article>
+      <article class="pipeline-card"><span>4</span><div class="process-visual"><img src="process/mu-layered.svg" alt="Layered vector drawing of mu" /></div><h2><strong>Vectorize</strong></h2><p>The final forms become editable paths with a named layer for every weight.</p></article>
+    </section>
+
+    <section class="case-section">
+      <div class="case-copy"><h2><strong>Rules that kept the system coherent</strong></h2></div>
+      <div class="font-decisions">
+        <article class="font-decision"><h3>Anchor the visual language</h3><p>HASYv2 establishes the core appearance for mathematical symbols, letters, numbers, and punctuation.</p></article>
+        <article class="font-decision"><h3>Treat weight as consensus</h3><p>The weights show how much agreement is needed for a mark to remain, rather than imitating conventional stroke expansion.</p></article>
+        <article class="font-decision"><h3>Keep fragile marks visible</h3><p>Small punctuation and umlaut dots use adjusted thresholds so lighter forms remain recognizable.</p></article>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-copy">
+        <h2><strong>Filling gaps without breaking the visual language</strong></h2>
+        <p>UJI Pen Characters v2 adds punctuation and Latin forms missing from the main source. Its pen strokes pass through the same alignment and averaging system so every addition belongs to the same family.</p>
+      </div>
+      <div class="font-source-grid">
+        <article class="font-source-card"><h3>HASYv2</h3><p>Mathematical symbols, letters, numbers, and established punctuation.</p></article>
+        <article class="font-source-card"><h3>Supplemental symbols</h3><p>Ten missing classes, including <code>!</code> <code>,</code> <code>(</code> <code>)</code>.</p></article>
+        <article class="font-source-card"><h3>UJI Pen Characters v2</h3><p><code>? . ; : ' &quot; @ ¿ ¡ €</code> plus <code>t Ü ü</code>.</p></article>
+      </div>
+      <div class="case-copy">
+        <h2><strong>Building new glyphs from two sources</strong></h2>
+        <p>Umlaut strokes from UJI are placed above HASYv2 letter forms to create <code>Ä ä Ö ö</code> while keeping the family visually consistent.</p>
+        <p class="font-equation">HASY letter form + UJI umlaut strokes = derived glyph</p>
+      </div>
+      <div class="font-derivations" aria-label="Source letters and derived umlaut characters">
+        <figure class="derivation-row">
+          <div class="derivation-part"><img src="process/derivations/hasy-upper-A.png" alt="Original handwritten uppercase A from HASYv2" /><span>A</span></div><span class="derivation-operator">+</span>
+          <div class="derivation-part"><img src="process/derivations/uji-upper-umlaut-black-on-white.png" alt="Original handwritten uppercase U with umlaut from UJI" /><span>Ü source</span></div><span class="derivation-operator">=</span>
+          <div class="derivation-part"><img src="process/derivations/derived-upper-A-diaeresis.png" alt="Derived uppercase A with umlaut" /><span>Ä</span></div>
+        </figure>
+        <figure class="derivation-row">
+          <div class="derivation-part"><img src="process/derivations/hasy-lower-a.png" alt="Original handwritten lowercase a from HASYv2" /><span>a</span></div><span class="derivation-operator">+</span>
+          <div class="derivation-part"><img src="process/derivations/uji-lower-umlaut-black-on-white.png" alt="Original handwritten lowercase u with umlaut from UJI" /><span>ü source</span></div><span class="derivation-operator">=</span>
+          <div class="derivation-part"><img src="process/derivations/derived-lower-a-diaeresis.png" alt="Derived lowercase a with umlaut" /><span>ä</span></div>
+        </figure>
+        <figure class="derivation-row">
+          <div class="derivation-part"><img src="process/derivations/hasy-upper-O.png" alt="Original handwritten uppercase O from HASYv2" /><span>O</span></div><span class="derivation-operator">+</span>
+          <div class="derivation-part"><img src="process/derivations/uji-upper-umlaut-black-on-white.png" alt="Original handwritten uppercase U with umlaut from UJI" /><span>Ü source</span></div><span class="derivation-operator">=</span>
+          <div class="derivation-part"><img src="process/derivations/derived-upper-O-diaeresis.png" alt="Derived uppercase O with umlaut" /><span>Ö</span></div>
+        </figure>
+        <figure class="derivation-row">
+          <div class="derivation-part"><img src="process/derivations/hasy-lower-o.png" alt="Original handwritten lowercase o from HASYv2" /><span>o</span></div><span class="derivation-operator">+</span>
+          <div class="derivation-part"><img src="process/derivations/uji-lower-umlaut-black-on-white.png" alt="Original handwritten lowercase u with umlaut from UJI" /><span>ü source</span></div><span class="derivation-operator">=</span>
+          <div class="derivation-part"><img src="process/derivations/derived-lower-o-diaeresis.png" alt="Derived lowercase o with umlaut" /><span>ö</span></div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="case-section" id="weights">
+      <div class="case-copy">
+        <h2><strong>From accumulated variation to shared structure</strong></h2>
+        <p>The same probability map drives every weight. Black includes more individual variation; lighter weights represent the strokes shared most consistently. The numbers follow the standard CSS scale, from 900 Black to 100 Thin.</p>
+      </div>
+      <div class="weight-tabs" role="group" aria-label="Choose a weight sheet">
+        <button class="weight-tab" type="button" data-sheet="black" data-label="Black 900" aria-pressed="false">Black 900</button>
+        <button class="weight-tab" type="button" data-sheet="extra_bold" data-label="Extra Bold 800" aria-pressed="false">Extra Bold 800</button>
+        <button class="weight-tab" type="button" data-sheet="bold" data-label="Bold 700" aria-pressed="false">Bold 700</button>
+        <button class="weight-tab" type="button" data-sheet="semi_bold" data-label="Semi Bold 600" aria-pressed="false">Semi Bold 600</button>
+        <button class="weight-tab" type="button" data-sheet="medium" data-label="Medium 500" aria-pressed="false">Medium 500</button>
+        <button class="weight-tab" type="button" data-sheet="regular" data-label="Regular 400" aria-pressed="true">Regular 400</button>
+        <button class="weight-tab" type="button" data-sheet="light" data-label="Light 300" aria-pressed="false">Light 300</button>
+        <button class="weight-tab" type="button" data-sheet="extra_light" data-label="Extra Light 200" aria-pressed="false">Extra Light 200</button>
+        <button class="weight-tab" type="button" data-sheet="thin" data-label="Thin 100" aria-pressed="false">Thin 100</button>
+      </div>
+      <figure class="weight-viewer">
+        <img id="weight-sheet" src="svg_sheets/regular.svg" alt="Complete Regular 400 character sheet" />
+      </figure>
+    </section>
+
+    <section class="case-panel result-panel" id="tester">
+      <h2><strong>Test the complete character set</strong></h2>
+      <p>Switch between all nine weights, change the scale, and type directly with the symbol family.</p>
+      <div class="font-tester-controls">
+        <label>Weight
+          <select id="weight">
+            <option value="100">Thin</option><option value="200">Extra Light</option><option value="300">Light</option><option value="400" selected>Regular</option><option value="500">Medium</option><option value="600">Semi Bold</option><option value="700">Bold</option><option value="800">Extra Bold</option><option value="900">Black</option>
+          </select>
+        </label>
+        <label>Size <input id="size" type="range" min="32" max="140" value="76" /><output id="size-value" for="size">76 px</output></label>
+        <button class="font-reset" id="reset-sample" type="button">Reset sample</button>
+      </div>
+      <textarea class="font-tester" id="type" aria-label="Type with Mean Hand Symbols" spellcheck="false">μ = Σx / n
+σ² = Σ(x - μ)² / n
+Ä Ö Ü · ä ö ü · ? ¿ ¡ €
+√∞ ∑ ∫ cos sin log lim</textarea>
+    </section>
+
+    <section class="case-section">
+      <div class="case-copy">
+        <h2><strong>A system that can be inspected, tested, and reused</strong></h2>
+        <p>The same source data now powers webfonts, complete character sheets, layered glyphs, bitmap specimens, and an interactive gallery. Clear source rules and automated checks keep the system consistent as it grows.</p>
+        <p>Stable character mappings support digital use. Matching sheet order makes weights easy to compare. Layered vectors remain editable. Reports track sources, sample coverage, and generated assets.</p>
+        <h2><strong>What this project changed in my design practice</strong></h2>
+        <p>The project reframed consistency as a system of rules rather than a single visual style. Designing the alignment, source logic, and checks was as important as shaping the final forms. The result is both a type system and a transparent way to turn uncertain data into a reliable interface asset.</p>
+      </div>
+    </section>
+
+    <section class="case-panel result-panel">
+      <h2><strong>Explore all 396 characters</strong></h2>
+      <p>Compare probability means with all nine weights, filter by source, and inspect the character system individually or by category.</p>
+      <p><a href="gallery.html" target="_blank" rel="noreferrer"><strong>Open the interactive gallery →</strong></a></p>
+    </section>
+
+    <section class="contact project-contact" id="about" aria-label="Contact">
+      <h2>Want to work together?</h2>
+      <p>If you like what you see and want to work together, get in touch!</p>
+      <a href="mailto:prathikp.prasad@gmail.com?subject=Contact%20via%20Portfolio">prathikp.prasad@gmail.com</a>
+    </section>
+  </main>
+
+  <script src="../../script.js"></script>
+  <script>
+    const specimen = document.querySelector('#type');
+    const size = document.querySelector('#size');
+    const sizeValue = document.querySelector('#size-value');
+    const weightSelect = document.querySelector('#weight');
+    const weightSheet = document.querySelector('#weight-sheet');
+    const weightTabs = document.querySelectorAll('.weight-tab');
+    const defaultSample = specimen.value;
+
+    console.assert(weightTabs.length === 9, 'Expected nine weight tabs');
+
+    weightTabs.forEach(button => button.addEventListener('click', () => {
+      weightTabs.forEach(tab => tab.setAttribute('aria-pressed', String(tab === button)));
+      weightSheet.src = `svg_sheets/${button.dataset.sheet}.svg`;
+      weightSheet.alt = `Complete ${button.dataset.label} character sheet`;
+    }));
+
+    weightSelect.addEventListener('change', event => specimen.style.fontWeight = event.target.value);
+    const updateSize = () => {
+      specimen.style.fontSize = `${size.value}px`;
+      sizeValue.value = `${size.value} px`;
+    };
+    size.addEventListener('input', updateSize);
+    document.querySelector('#reset-sample').addEventListener('click', () => {
+      specimen.value = defaultSample;
+      specimen.style.fontWeight = '400';
+      weightSelect.value = '400';
+      size.value = '76';
+      updateSize();
+    });
+  </script>
+</body>
+</html>
