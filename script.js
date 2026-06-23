@@ -32,7 +32,7 @@ const projectCards = [
   {
     title: 'VR Hand Rehabilitation Exergame:',
     description: 'VR mini-exergames and data dashboard for therapists',
-    url: 'https://prathikprasad.webflow.io/projects/master-project-vr',
+    url: 'projects/vr-rehab/',
     image: 'assets/vr-hand-rehab.png',
     imageClass: 'contain',
     span: 4,
@@ -52,7 +52,7 @@ const projectCards = [
   {
     title: 'Here & Now:',
     description: 'Social app to connect BMW car owners',
-    url: 'https://prathikprasad.webflow.io/projects/bmw-innovation-challenge',
+    url: 'projects/bmw/',
     image: 'assets/bmw-cover.webp',
     imageClass: 'contain',
     span: 3,
@@ -62,7 +62,7 @@ const projectCards = [
   {
     title: 'Lost & Found:',
     description: '',
-    url: 'https://prathikprasad.webflow.io/projects/hack-bay-24',
+    url: 'projects/hackbay/',
     image: 'assets/hackbay-cover.png',
     avatar: 'assets/avatar-trophy.avif',
     imageClass: 'cover',
@@ -73,7 +73,7 @@ const projectCards = [
   {
     title: 'Content Design: PfA Data Visualization and Content Design',
     description: '',
-    url: 'https://prathikprasad.webflow.io/projects/pfa-content-design',
+    url: 'projects/pfa/',
     image: 'assets/pfa-content.webp',
     imageClass: 'contain',
     span: 3,
@@ -97,7 +97,7 @@ const experimentCards = [
   {
     title: 'City Saviours:',
     description: 'Metaverse game to learn how to make more green everyday choices',
-    url: 'https://prathikprasad.webflow.io/projects/mataverse-hackathon-game',
+    url: 'projects/city-saviours/',
     image: 'assets/city-saviours.webp',
     avatar: 'assets/avatar-trophy.avif',
     imageClass: 'contain wip',
