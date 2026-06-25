@@ -548,12 +548,11 @@ main { overflow: hidden; }
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
   align-items: start;
 }
-.dashboard-screens-section .case-image-strip {
+.dashboard-screens-section .case-image-stack {
   grid-template-columns: 1fr;
 }
-.dashboard-screens-section .case-figure img {
-  height: auto;
-  max-height: none;
+.dashboard-screens-section .case-image-stack img {
+  background: transparent;
 }
 .full-span {
   grid-column: 1 / -1;
@@ -762,6 +761,14 @@ main { overflow: hidden; }
   border-radius: var(--radius);
   background: var(--sand);
 }
+.bmw-visual-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+}
+.bmw-visual-grid img {
+  height: clamp(220px, 24vw, 360px);
+  object-fit: contain;
+}
 .case-meta-grid {
   margin-top: 10px;
 }
@@ -837,6 +844,29 @@ main { overflow: hidden; }
   border-radius: var(--inner-radius);
   background: var(--sand);
   font-weight: 700;
+}
+.pfa-media-grid {
+  grid-template-columns: 1fr;
+}
+.pfa-post-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(326px, 0.75fr);
+  gap: 10px;
+  align-items: start;
+}
+.pfa-design-stack {
+  display: grid;
+  gap: 10px;
+}
+.pfa-design-stack img {
+  width: 100%;
+  object-fit: contain;
+}
+.pfa-instagram {
+  max-width: 540px;
+  min-width: 0;
+  width: 100%;
+  margin: 0;
 }
 .case-embed {
   width: 100%;
@@ -1124,6 +1154,7 @@ main { overflow: hidden; }
   .dashboard-screens-section,
   .case-copy.with-image,
   .case-media-grid,
+  .pfa-post-pair,
   .persona-details,
   .principle-grid,
   .pipeline-grid {
@@ -1272,6 +1303,8 @@ main { overflow: hidden; }
   .font-facts { grid-template-columns: 1fr; }
   .case-meta-grid,
   .case-image-strip { grid-template-columns: 1fr; }
+  .bmw-visual-grid { grid-template-columns: 1fr; }
+  .bmw-visual-grid img { height: auto; }
   .case-embed { min-height: 520px; }
   .font-process { grid-template-columns: 1fr; }
   .font-meta,
