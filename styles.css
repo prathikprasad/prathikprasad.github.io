@@ -447,6 +447,9 @@ main { overflow: hidden; }
 .case-study {
   overflow: visible;
 }
+.case-study img {
+  border-radius: var(--radius);
+}
 .case-panel,
 .case-section,
 .persona-panel,
@@ -559,6 +562,15 @@ main { overflow: hidden; }
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
 }
+.three-column-center {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px) minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+.three-column-center > img {
+  width: 100%;
+}
 .dashboard-screens-section {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
@@ -572,6 +584,12 @@ main { overflow: hidden; }
 }
 .full-span {
   grid-column: 1 / -1;
+}
+.two-column > img.full-span {
+  justify-self: center;
+}
+.ar-medium-image {
+  width: min(100%, 618px);
 }
 .case-media-grid {
   display: grid;
@@ -760,6 +778,47 @@ main { overflow: hidden; }
   height: 100%;
   border-radius: 15px;
   object-fit: contain;
+}
+.compact-result-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+}
+.compact-result-grid .result-media {
+  height: auto;
+}
+.compact-result-grid .result-media:nth-child(-n + 2) {
+  height: clamp(220px, 24vw, 320px);
+}
+.compact-result-grid .result-media:nth-child(3) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: min(100%, 620px);
+}
+.compact-result-grid .result-media img {
+  width: 100%;
+  height: auto;
+}
+.compact-result-grid .result-media:nth-child(-n + 2) img {
+  height: 100%;
+  object-fit: cover;
+}
+.case-image-contained {
+  width: min(100%, 380px);
+  justify-self: center;
+  align-self: center;
+}
+.impact-results-section {
+  align-items: center;
+}
+.research-flow-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 520px);
+  gap: 16px;
+  align-items: start;
+}
+.research-flow-row .case-image-contained {
+  width: 100%;
 }
 .case-meta-grid,
 .case-image-strip {
@@ -1208,6 +1267,7 @@ main { overflow: hidden; }
     height: 64px;
   }
   .two-column,
+  .three-column-center,
   .dashboard-screens-section,
   .case-copy.with-image,
   .case-media-grid,
