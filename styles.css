@@ -472,6 +472,34 @@ main { overflow: hidden; }
 .case-panel {
   background: var(--sand);
 }
+.case-panel.publication-panel p {
+  font-size: 12px;
+  line-height: 18px;
+}
+.publication-panel {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.publication-panel > div:first-child {
+  flex: 1;
+}
+.publication-logos {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.case-study .publication-logos img {
+  height: 40px;
+  width: auto;
+  border-radius: 0;
+}
+@media (max-width: 620px) {
+  .publication-panel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .case-section {
   display: flex;
   flex-direction: column;
