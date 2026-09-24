@@ -17,7 +17,7 @@ const projectCards = [
     imageClass: 'cover',
     span: 6,
     categories: ['arxr', 'product'],
-    tags: ['Augmented Reality', 'UI Design', 'Web', 'Unity', 'Meta Quest 3']
+    tags: ['Augmented Reality', 'UI Design', 'Web', 'Smartphone']
   },
   {
     title: 'DuckXR:',
