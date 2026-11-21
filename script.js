@@ -83,7 +83,6 @@ const projectCards = [
   {
     title: 'Public Transport Map Design',
     description: 'Bangalore Metro and Bus network map design',
-    url: '#',
     image: 'assets/portfolio-map-wide.svg',
     imageClass: 'contain wip',
     wipLabel: 'WIP',
@@ -106,7 +105,6 @@ const experimentCards = [
   {
     title: 'WTFire!?',
     description: 'Have you ever played "Smash your PC"? We\'ve made a MxR experience where you throw virtual objects into a bonfire',
-    url: '#',
     image: 'assets/wtfire.avif',
     imageClass: 'contain wip',
     wipLabel: 'WIP',
@@ -115,7 +113,6 @@ const experimentCards = [
   {
     title: 'Solar Panel Digital Twin',
     description: 'Designed and Built a DigitalTwin of a house and connected it with real-time solar panel data',
-    url: '#',
     image: 'assets/digitaltwin.gif',
     imageClass: 'cover wip',
     wipLabel: 'WIP',
@@ -138,17 +135,21 @@ function mediaMarkup(card) {
 function cardMarkup(card, isExperiment = false) {
   const spanClass = isExperiment ? '' : ` span-${card.span}`;
   const compact = card.span === 3 && !isExperiment ? ' compact' : '';
-  const external = card.url.startsWith('http') && !card.url.includes('prathikprasad.webflow.io');
-  const targetAttrs = external ? ' target="_blank" rel="noreferrer"' : '';
+  // Cards without a url (work in progress) are plain blocks, not links to nowhere.
+  const tag = card.url ? 'a' : 'div';
+  const external = card.url?.startsWith('http') && !card.url.includes('prathikprasad.webflow.io');
+  const linkAttrs = card.url ? ` href="${card.url}"${external ? ' target="_blank" rel="noreferrer"' : ''}` : '';
+  // Work cards sit directly under the page h1; experiment cards sit under their section's h2.
+  const heading = isExperiment ? 'h3' : 'h2';
   return `
-    <a class="card${spanClass}${compact}" href="${card.url}"${targetAttrs} data-categories="${(card.categories || []).join(' ')}">
+    <${tag} class="card${spanClass}${compact}"${linkAttrs} data-categories="${(card.categories || []).join(' ')}">
       ${mediaMarkup(card)}
       <div class="card-body">
-        <h3>${card.title}</h3>
+        <${heading}>${card.title}</${heading}>
         ${card.description ? `<p class="desc">${card.description}</p>` : ''}
         ${createTags(card.tags)}
       </div>
-    </a>`;
+    </${tag}>`;
 }
 
 const projectGrid = document.getElementById('projectGrid');
@@ -161,14 +162,10 @@ if (experimentGrid) {
 }
 
 if (projectGrid) {
-  document.querySelectorAll('.tab').forEach(button => {
+  const filterButtons = document.querySelectorAll('.tab');
+  filterButtons.forEach(button => {
     button.addEventListener('click', () => {
-      document.querySelectorAll('.tab').forEach(tab => {
-        tab.classList.remove('active');
-        tab.setAttribute('aria-selected', 'false');
-      });
-      button.classList.add('active');
-      button.setAttribute('aria-selected', 'true');
+      filterButtons.forEach(tab => tab.setAttribute('aria-pressed', String(tab === button)));
       const filter = button.dataset.filter;
       projectGrid.classList.toggle('is-filtered', filter !== 'all');
       document.querySelectorAll('#projectGrid .card').forEach(card => {
@@ -176,6 +173,22 @@ if (projectGrid) {
         card.hidden = filter !== 'all' && !categories.includes(filter);
       });
     });
+  });
+}
+
+const marqueeToggle = document.querySelector('.marquee-toggle');
+if (marqueeToggle) {
+  marqueeToggle.addEventListener('click', () => {
+    const paused = marqueeToggle.parentElement.classList.toggle('is-paused');
+    marqueeToggle.textContent = paused ? 'Play' : 'Pause';
+  });
+}
+
+// Visitors who ask for reduced motion get the videos paused on their poster; the controls still play them.
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('video[autoplay]').forEach(video => {
+    video.removeAttribute('autoplay');
+    video.pause();
   });
 }
 
@@ -189,8 +202,8 @@ if (cursorWrapper && cursor) {
   const clickableSelector = 'a, button, [role="button"], [tabindex]:not([tabindex="-1"])';
 
   window.addEventListener('pointermove', event => {
-    cursor.style.left = `${event.clientX}px`;
-    cursor.style.top = `${event.clientY}px`;
+    cursor.style.translate = `${event.clientX}px ${event.clientY}px`;
+    cursor.classList.add('is-active');
     cursor.classList.toggle('is-clickable', Boolean(event.target.closest(clickableSelector)));
   });
 
@@ -200,17 +213,26 @@ if (cursorWrapper && cursor) {
 }
 
 if (siteHeader && menuToggle && primaryNav) {
-  menuToggle.addEventListener('click', () => {
-    const isOpen = siteHeader.classList.toggle('menu-open');
-    menuToggle.setAttribute('aria-expanded', String(isOpen));
-    menuToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
-  });
+  const isMenuOpen = () => siteHeader.classList.contains('menu-open');
+  const setMenu = open => {
+    siteHeader.classList.toggle('menu-open', open);
+    menuToggle.setAttribute('aria-expanded', String(open));
+  };
+
+  menuToggle.addEventListener('click', () => setMenu(!isMenuOpen()));
 
   primaryNav.addEventListener('click', event => {
-    if (event.target.closest('a')) {
-      siteHeader.classList.remove('menu-open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-      menuToggle.setAttribute('aria-label', 'Open menu');
+    if (event.target.closest('a')) setMenu(false);
+  });
+
+  document.addEventListener('click', event => {
+    if (isMenuOpen() && !siteHeader.contains(event.target)) setMenu(false);
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && isMenuOpen()) {
+      setMenu(false);
+      menuToggle.focus();
     }
   });
 }

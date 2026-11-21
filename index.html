@@ -8,11 +8,11 @@
   <meta name="description" content="Prathik is a HCI XR Researcher &amp; Designer based in Germany." />
   <meta property="og:title" content="Prathik Prasad's Portfolio" />
   <meta property="og:description" content="Prathik is a HCI XR Researcher &amp; Designer based in Germany." />
-  <meta property="og:image" content="assets/og-preview.png" />
+  <meta property="og:image" content="https://prathikprasad.github.io/assets/og-preview.png" />
   <meta property="og:type" content="website" />
   <meta name="twitter:title" content="Prathik Prasad's Portfolio" />
   <meta name="twitter:description" content="Prathik is a HCI XR Researcher &amp; Designer based in Germany." />
-  <meta name="twitter:image" content="assets/og-preview.png" />
+  <meta name="twitter:image" content="https://prathikprasad.github.io/assets/og-preview.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,14 +28,14 @@
 
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Prathik Prasad home">Prathik Prasad</a>
-    <nav class="nav" id="primaryNav" aria-label="Primary navigation">
+    <nav class="nav" id="primaryNav" aria-label="Primary">
       <a class="nav-pill active" href="#work">Work</a>
       <a class="nav-pill muted" href="#about">About</a>
       <a class="linkedin" href="https://www.linkedin.com/in/prathikprasad/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
         <img src="assets/linkedin.svg" alt="" />
       </a>
     </nav>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Menu">
       <img src="assets/menu-icon.png" alt="" />
     </button>
   </header>
@@ -46,42 +46,43 @@
         <div class="hero-title-box">
           <p class="eyebrow">AR / XR &bull; Spatial Interaction &bull; User Experience &bull; Graphic Design</p>
           <h1>Prathik Prasad</h1>
-          <h2>AR/XR Prototyper &amp; Experience Designer</h2>
+          <p class="hero-role">AR/XR Prototyper &amp; Experience Designer</p>
         </div>
         <div class="hero-text-box">
           <p>Building rapid, interactive prototypes to explore and define the future of immersive experiences. Bridging human-centered research and technical execution, I turn conceptual designs into visually compelling, playable realities using Unity and Figma.</p>
         </div>
       </div>
-      <img class="hero-portrait" src="assets/portrait.webp" alt="Portrait of Prathik Prasad" />
+      <img class="hero-portrait" src="assets/portrait.webp" alt="Portrait of Prathik Prasad" width="687" height="1020" />
     </section>
 
     <section class="logo-strip" aria-label="Featured organizations">
-      <div class="marquee-track" aria-hidden="true">
-        <img src="assets/hci-ai.png" alt="" />
-        <img src="assets/siemens-healthineers.svg" alt="" />
-        <img class="wide" src="assets/bmw-logo.png" alt="" />
-        <img src="assets/everllence-logo.png" alt="" />
+      <div class="marquee-track">
+        <img src="assets/hci-ai.png" alt="Human-Centered Computing and Extended Reality Lab" />
+        <img src="assets/siemens-healthineers.svg" alt="Siemens Healthineers" />
+        <img class="wide" src="assets/bmw-logo.png" alt="BMW Group" />
+        <img src="assets/everllence-logo.png" alt="Everllence" />
         <img src="assets/hci-ai.png" alt="" />
         <img src="assets/siemens-healthineers.svg" alt="" />
         <img class="wide" src="assets/bmw-logo.png" alt="" />
         <img src="assets/everllence-logo.png" alt="" />
       </div>
+      <button class="marquee-toggle" type="button">Pause</button>
     </section>
 
     <section class="work-section" id="work">
-      <div class="tablist" role="tablist" aria-label="Project categories">
-        <button class="tab active" data-filter="all" type="button" aria-selected="true">All</button>
-        <button class="tab" data-filter="arxr" type="button" aria-selected="false">AR / XR</button>
-        <button class="tab" data-filter="product" type="button" aria-selected="false">Product Design</button>
-        <button class="tab" data-filter="graphic" type="button" aria-selected="false">Graphic Design</button>
+      <div class="tablist" role="group" aria-label="Filter projects by category">
+        <button class="tab" data-filter="all" type="button" aria-pressed="true">All</button>
+        <button class="tab" data-filter="arxr" type="button" aria-pressed="false">AR / XR</button>
+        <button class="tab" data-filter="product" type="button" aria-pressed="false">Product Design</button>
+        <button class="tab" data-filter="graphic" type="button" aria-pressed="false">Graphic Design</button>
       </div>
       <div class="project-grid" id="projectGrid"></div>
     </section>
 
     <section class="experiments" aria-labelledby="experiments-title">
       <div class="section-heading">
-        <p id="experiments-title">Experiments &amp; Exploration</p>
-        <h2>2&ndash;4 days hackathons and workshops around emerging tech</h2>
+        <h2 id="experiments-title">Experiments &amp; Exploration</h2>
+        <p>2&ndash;4 days hackathons and workshops around emerging tech</p>
       </div>
       <div class="experiment-grid" id="experimentGrid"></div>
     </section>

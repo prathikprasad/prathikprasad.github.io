@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>KARVIMIO AR Assembly Guidance</title>
   <meta name="description" content="Hands-free AR assembly guidance for surgical instruments in the operating room." />
+  <meta property="og:title" content="KARVIMIO AR Assembly Guidance" />
+  <meta property="og:description" content="Hands-free AR assembly guidance for surgical instruments in the operating room." />
+  <meta property="og:image" content="https://prathikprasad.github.io/assets/og-preview.png" />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet" />
@@ -19,14 +24,14 @@
 
   <header class="site-header">
     <a class="brand" href="../../index.html" aria-label="Prathik Prasad home">Prathik Prasad</a>
-    <nav class="nav" id="primaryNav" aria-label="Primary navigation">
+    <nav class="nav" id="primaryNav" aria-label="Primary">
       <a class="nav-pill active" href="../../index.html#work">Work</a>
       <a class="nav-pill muted" href="../../index.html#about">About</a>
       <a class="linkedin" href="https://www.linkedin.com/in/prathikprasad/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
         <img src="../../assets/linkedin.svg" alt="" />
       </a>
     </nav>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Menu">
       <img src="../../assets/menu-icon.png" alt="" />
     </button>
   </header>
@@ -47,7 +52,7 @@
       <p><strong>Springer Virtual Reality Journal, 2026</strong> &middot; <a href="https://doi.org/10.1007/s10055-026-01491-3" target="_blank" rel="noreferrer">DOI: 10.1007/s10055-026-01491-3</a></p>
       </div>
       <div class="publication-logos">
-        <img src="../../assets/references/springervr.png" alt="Springer" />
+        <img src="../../assets/references/springervr.png" alt="Springer" width="141" height="41" />
       </div>
     </section>
 
@@ -63,8 +68,8 @@
         <p>The system used HoloLens 2, AI-based object recognition, and markerless 6D pose estimation to deliver context-aware instructions directly into the user's field of view.</p>
       </div>
       <div class="case-media-grid full-span">
-        <img src="../../assets/ar/KARVIMIO AR Interface Overview.png" alt="KARVIMIO AR Interface Overview" />
-        <img src="../../assets/ar-tool-assembly.webp" alt="AR tool assembly guidance preview" />
+        <img src="../../assets/ar/KARVIMIO AR Interface Overview.webp" alt="KARVIMIO AR Interface Overview" width="2400" height="1702" />
+        <img src="../../assets/ar-tool-assembly.webp" alt="AR tool assembly guidance preview" width="2000" height="1536" loading="lazy" />
       </div>
     </section>
 
@@ -91,8 +96,8 @@
         <p>Operating Room Specialist</p>
       </div>
       <div class="persona-details">
-        <p>GOALS<br />+Maintain absolute sterility during instrument preparation.<br />+Assemble complex, rarely used surgical tools quickly and accurately.<br />+Minimize dependency on circulating nurses for instruction retrieval.</p>
-        <p>FRUSTRATIONS<br />-Having to verbally direct a non-sterile colleague to turn pages in a paper manual.<br />-Translating ambiguous 2D diagrams into 3D physical assemblies under time pressure.<br />-Visual clutter and densely packed instrument tables causing cognitive overload.</p>
+        <div><p>GOALS</p><ul><li>Maintain absolute sterility during instrument preparation.</li><li>Assemble complex, rarely used surgical tools quickly and accurately.</li><li>Minimize dependency on circulating nurses for instruction retrieval.</li></ul></div>
+        <div><p>FRUSTRATIONS</p><ul class="minus-list"><li>Having to verbally direct a non-sterile colleague to turn pages in a paper manual.</li><li>Translating ambiguous 2D diagrams into 3D physical assemblies under time pressure.</li><li>Visual clutter and densely packed instrument tables causing cognitive overload.</li></ul></div>
       </div>
       <p><em>"I cannot break scrub to check a manual, so I have to guess or wait for someone to help me. Both options waste critical time."</em></p>
     </section>
@@ -108,7 +113,7 @@
         <p>Translating 2D technical schematics into 3D physical actions requires high cognitive effort. In a dense OR setup with multiple instrument parts scattered across sterile tables, identifying the correct component and orientation becomes a stress-inducing process.</p>
         <p>We needed a solution that eliminated physical interaction with instructional materials while providing unambiguous spatial context.</p>
       </div>
-      <img class="full-span" src="../../assets/ar/The Cognitive Gap.png" alt="The Cognitive Gap" />
+      <img class="full-span" src="../../assets/ar/The Cognitive Gap.webp" alt="The Cognitive Gap" width="2400" height="656" loading="lazy" />
     </section>
 
     <section class="case-section research-flow-section">
@@ -116,7 +121,7 @@
         <h2>Research &amp; Discovery: <strong>A 32-Person Within-Subject Study</strong></h2>
         <div class="research-flow-row">
           <p>To systematically evaluate AR guidance, we designed a within-subject user study with 32 participants: 16 medical experts with OR experience and 16 laypeople. Participants assembled four 3D-printed instruments of varying complexity using four guidance methods: paper baseline, marker-fixed AR, field-of-view fixed AR, and in-situ AR.</p>
-          <img class="case-image-contained" src="../../assets/ar/userstudyflow.jpg" alt="User Study Procedure" />
+          <img class="case-image-contained" src="../../assets/ar/userstudyflow.jpg" alt="User Study Procedure" width="1600" height="879" loading="lazy" />
         </div>
         <p>We structured the evaluation around the General Assembly Task Model (GATM), which breaks assembly into measurable blocks: locating a part, picking it up, finding its correct orientation, and executing the final assembly. We collected objective metrics such as task completion time and error rates, alongside NASA-TLX, System Usability Scale, and User Experience Questionnaire feedback.</p>
       </div>
@@ -184,7 +189,7 @@
         <p>A wireframe with light translucent fill gave the best combination of structural cues and visibility. But placement mattered as much as material. We tested in-situ, FoV-fixed, and marker-fixed spatial paradigms.</p>
         <p>In-situ felt the most futuristic, but the 0.5-2 cm tracking offset made it mentally taxing. Marker-fixed and FoV-fixed guidance kept the work surface clearer and gave users a stable point of reference.</p>
       </div>
-      <img class="full-span" src="../../assets/ar/Rendering Shaders Comparison.png" alt="Rendering Shaders Comparison" />
+      <img class="full-span" src="../../assets/ar/Rendering Shaders Comparison.webp" alt="Rendering Shaders Comparison" width="2400" height="699" loading="lazy" />
     </section>
 
     <section class="case-section two-column">
@@ -198,7 +203,7 @@
         <p>We separated picking instructions from assembly instructions. First, a color-coded floating tooltip with a directional arrow pointed to the physical object to pick up. Then, once the part was identified, the system showed the 3D animation explaining how it connected to the main assembly.</p>
         <p>This reduced visual clutter and gave each step a clear purpose.</p>
       </div>
-      <img class="full-span" src="../../assets/ar/Gaze-Controlled Navigation.gif" alt="Gaze-Controlled Navigation" />
+      <video class="full-span" controls autoplay loop muted playsinline loading="lazy" width="1280" height="720" poster="../../assets/ar/Gaze-Controlled Navigation.poster.webp" aria-label="Gaze-Controlled Navigation" src="../../assets/ar/Gaze-Controlled Navigation.mp4"></video>
     </section>
 
     <section class="case-panel">
@@ -209,9 +214,9 @@
       <h2>The Solution: <strong>KARVIMIO AR</strong></h2>
       <p>The final experience blends spatial computing and computer vision. A dark blue, semi-transparent instruction panel floats unobtrusively in the environment while markerless tracking identifies sterile 3D-printed instruments on the table and places color-coded tooltips over the exact parts required for each step.</p>
       <div class="result-grid compact-result-grid">
-        <div class="result-media"><img src="../../assets/ar/beforeandafter.png" alt="Before and After" /></div>
-        <div class="result-media"><img src="../../assets/ar/Ghosting Animation Sequence.gif" alt="Ghosting Animation Sequence" /></div>
-        <div class="result-media"><img src="../../assets/ar/System Architecture.png" alt="System Architecture" /></div>
+        <div class="result-media"><img src="../../assets/ar/beforeandafter.webp" alt="Before and After" width="1942" height="1517" loading="lazy" /></div>
+        <div class="result-media"><video controls autoplay loop muted playsinline loading="lazy" width="1280" height="720" poster="../../assets/ar/Ghosting Animation Sequence.poster.webp" aria-label="Ghosting Animation Sequence" src="../../assets/ar/Ghosting Animation Sequence.mp4"></video></div>
+        <div class="result-media"><img src="../../assets/ar/System Architecture.webp" alt="System Architecture" width="2400" height="1661" loading="lazy" /></div>
       </div>
     </section>
 
@@ -235,7 +240,7 @@
         <p>Medical experts made significantly fewer assembly errors than laypeople and recognized the value of the system for training. Expert feedback reinforced the decision to keep the table clear, while participants noted that graphic representation of the parts to be picked helped a lot.</p>
         <p>Despite the appeal of in-situ animations, the data showed that users had to compensate for tracking offsets. By prioritizing stability and clear visibility over flashy overlays, we delivered a tool better suited to medical professionals.</p>
       </div>
-      <img class="case-image-contained" src="../../assets/ar/UsabilityScore Outcomes.svg" alt="Usability Score Outcomes" />
+      <img class="case-image-contained" src="../../assets/ar/UsabilityScore Outcomes.svg" alt="Usability Score Outcomes" width="367" height="399" loading="lazy" />
     </section>
 
     <section class="case-section two-column">
@@ -249,7 +254,7 @@
         <p>The next iteration will focus on refining AI tracking to handle severe hand occlusions, which remains the biggest technical hurdle.</p>
         <p>We also plan to explore context-aware UI that automatically transitions from solid to wireframe rendering as the user's hand approaches the assembly point.</p>
       </div>
-      <img class="full-span" src="../../assets/ar/Physical Testing Artifacts.png" alt="Physical Testing Artifacts" />
+      <img class="full-span" src="../../assets/ar/Physical Testing Artifacts.webp" alt="Physical Testing Artifacts" width="2400" height="1265" loading="lazy" />
     </section>
 
     <section class="case-panel">
@@ -257,7 +262,7 @@
     </section>
 
     <section class="case-panel case-hero">
-      <h1>Evaluating Hands-Free Gaze-Driven Selection for Surgical AR</h1>
+      <h2>Evaluating Hands-Free Gaze-Driven Selection for Surgical AR</h2>
     </section>
 
     <section class="case-panel case-intro">
@@ -271,7 +276,7 @@
       <p><strong>2026 EuroXR</strong> Accepted</p>
       </div>
       <div class="publication-logos">
-        <img src="../../assets/references/euroxr2026.png" alt="EuroXR 2026 Valencia" />
+        <img src="../../assets/references/euroxr2026.png" alt="EuroXR 2026 Valencia" width="140" height="41" loading="lazy" />
       </div>
     </section>
 
@@ -286,7 +291,7 @@
         <p>I designed, prototyped, and evaluated gaze-driven selection techniques for Magic Leap 2 using Unity 2022.3.30f1 and MRTK 2.8.3.0.</p>
         <p>The goal was to benchmark eye-only selection against multimodal baselines and identify an interaction model that maximized precision while minimizing physical and cognitive workload.</p>
       </div>
-      <img class="full-span" src="../../assets/ar/The KARVIMIO Operating Room Setup.png" alt="The KARVIMIO Operating Room Setup" />
+      <img class="full-span" src="../../assets/ar/The KARVIMIO Operating Room Setup.png" alt="The KARVIMIO Operating Room Setup" width="618" height="314" loading="lazy" />
     </section>
 
     <section class="case-section two-column">
@@ -300,7 +305,7 @@
         <p>Foot pedals are common in medical contexts and provide mechanical certainty, but they add hardware, limit mobility, and can introduce tripping hazards.</p>
         <p>Eye-only inputs such as blinking and winking require no external hardware, but depend heavily on headset sensor accuracy and can create false positives.</p>
       </div>
-      <img class="full-span ar-medium-image" src="../../assets/ar/Mapping the Hands-Free Constraints.png" alt="Mapping the Hands-Free Constraints" />
+      <img class="full-span ar-medium-image" src="../../assets/ar/Mapping the Hands-Free Constraints.webp" alt="Mapping the Hands-Free Constraints" width="2400" height="1438" loading="lazy" />
     </section>
 
     <section class="persona-panel">
@@ -309,8 +314,8 @@
         <p>Operating Room Specialist</p>
       </div>
       <div class="persona-details">
-        <p>GOALS<br />+Assemble complex surgical instruments quickly and sterilely.<br />+Access procedural manuals without breaking scrub.</p>
-        <p>FRUSTRATIONS<br />-Voice commands fail over the loud noise of the OR.<br />-Hands cannot be used to tap AR buttons due to sterility protocols.<br />-Accidental selections could skip crucial procedural steps.</p>
+        <div><p>GOALS</p><ul><li>Assemble complex surgical instruments quickly and sterilely.</li><li>Access procedural manuals without breaking scrub.</li></ul></div>
+        <div><p>FRUSTRATIONS</p><ul class="minus-list"><li>Voice commands fail over the loud noise of the OR.</li><li>Hands cannot be used to tap AR buttons due to sterility protocols.</li><li>Accidental selections could skip crucial procedural steps.</li></ul></div>
       </div>
     </section>
 
@@ -358,7 +363,7 @@
         <p>The challenge became bridging the mechanical reliability of a foot pedal with the hardware-free convenience of gaze-only input.</p>
         <p>Dwell-based selection was slow, but dependable. The interaction framework needed to support multimodal input, using the foot pedal for primary selection while keeping dwell time as a sterile fallback when mobility was restricted.</p>
       </div>
-      <img class="full-span" src="../../assets/ar/Trade-Off Matrix.png" alt="Trade-Off Matrix" />
+      <img class="full-span" src="../../assets/ar/Trade-Off Matrix.png" alt="Trade-Off Matrix" width="3962" height="392" loading="lazy" />
     </section>
 
     <section class="principle-grid">
@@ -385,7 +390,7 @@
         <p>We designed a point-and-select 3D alignment task to isolate selection technique performance from navigation complexity. The interface used a movable red 3D object that had to be aligned with a white target object initially spaced 6 cm apart.</p>
         <p>Users controlled movement along X, Y, and Z axes through directional buttons arranged in a cross pattern.</p>
       </div>
-      <img src="../../assets/ar/AR Interface Design.gif" alt="AR Interface Design" />
+      <video controls autoplay loop muted playsinline loading="lazy" width="240" height="300" poster="../../assets/ar/AR Interface Design.poster.webp" aria-label="AR Interface Design" src="../../assets/ar/AR Interface Design.mp4"></video>
       <div class="case-copy">
         <h2>Visual Feedback: <strong>Reticle, Hover, Chime</strong></h2>
         <p>Directional controls were placed in semi-transparent blue and purple containers with high-contrast white iconography. A small white circular reticle continuously showed the user's estimated gaze position.</p>
@@ -405,7 +410,7 @@
       <h2>The Solution: <strong>A Testable Multimodal AR Selection Framework</strong></h2>
       <p>The final prototype integrated all four selection modalities into one standardized interface. By keeping the visual layout and task mechanics constant, the study isolated the input method as the primary variable.</p>
       <div class="result-grid">
-        <div class="result-media"><img src="../../assets/ar/Interaction Flow.png" alt="Interaction Flow" /></div>
+        <div class="result-media"><img src="../../assets/ar/Interaction Flow.png" alt="Interaction Flow" width="2869" height="3244" loading="lazy" /></div>
       </div>
     </section>
 

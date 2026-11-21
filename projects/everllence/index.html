@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Everllence</title>
   <meta name="description" content="A Zero-to-One Web Augmented Reality Experience in a Museum" />
+  <meta property="og:title" content="Everllence" />
+  <meta property="og:description" content="A Zero-to-One Web Augmented Reality Experience in a Museum" />
+  <meta property="og:image" content="https://prathikprasad.github.io/assets/og-preview.png" />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet" />
@@ -19,14 +24,14 @@
 
   <header class="site-header">
     <a class="brand" href="../../index.html" aria-label="Prathik Prasad home">Prathik Prasad</a>
-    <nav class="nav" id="primaryNav" aria-label="Primary navigation">
+    <nav class="nav" id="primaryNav" aria-label="Primary">
       <a class="nav-pill active" href="../../index.html#work">Work</a>
       <a class="nav-pill muted" href="../../index.html#about">About</a>
       <a class="linkedin" href="https://www.linkedin.com/in/prathikprasad/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
         <img src="../../assets/linkedin.svg" alt="" />
       </a>
     </nav>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Menu">
       <img src="../../assets/menu-icon.png" alt="" />
     </button>
   </header>
@@ -52,8 +57,8 @@
         <p>One rule we stuck to throughout: no dedicated hardware, no app installs, just works.</p>
       </div>
       <div class="case-media-grid full-span">
-        <img src="../../assets/everllence/hero-museum.avif" alt="" />
-        <img src="../../assets/everllence/hero-interface.avif" alt="" />
+        <img src="../../assets/everllence/hero-museum.avif" alt="Museum exhibition hall with a vintage truck and display plinths carrying exhibit panels" width="1538" height="688" />
+        <img src="../../assets/everllence/hero-interface.avif" alt="Phone held up in the museum hall showing a blue 3D compressor model in augmented reality" width="1538" height="706" />
       </div>
     </section>
 
@@ -67,8 +72,8 @@
         <p>Museum Guest &amp; Engineering Enthusiast</p>
       </div>
       <div class="persona-details">
-        <p>GOALS<br />+Explore complex industrial machinery up close.<br />+Understand how massive engines work without reading dense plaques.</p>
-        <p>FRUSTRATIONS<br />-Disappointed when exhibits are closed or missing.<br />-Refuses to download a 500MB dedicated museum app on cellular data just for a 5-minute experience.</p>
+        <div><p>GOALS</p><ul><li>Explore complex industrial machinery up close.</li><li>Understand how massive engines work without reading dense plaques.</li></ul></div>
+        <div><p>FRUSTRATIONS</p><ul class="minus-list"><li>Disappointed when exhibits are closed or missing.</li><li>Refuses to download a 500MB dedicated museum app on cellular data just for a 5-minute experience.</li></ul></div>
       </div>
       <p><em>"I just want to see the exhibit. If I have to create an account or download an app, I'm walking away."</em></p>
     </section>
@@ -98,7 +103,7 @@
         <p>We defined a dual-modality approach based on device context. On desktop computers, the system would display an interactive 3D model viewer alongside a prominent QR code prompt, bridging the gap to mobile. On mobile and tablet, scanning the code would instantly activate a full AR experience.</p>
       </div>
       <div class="case-image-column">
-        <img src="../../assets/everllence/qr-flow.avif" alt="" />
+        <img src="../../assets/everllence/qr-flow.avif" alt="Phone scanning the QR code on a marine propulsion systems exhibit panel" width="1180" height="912" loading="lazy" />
       </div>
     </section>
 
@@ -108,24 +113,24 @@
         <p>I sketched out a minimalist control scheme focused entirely on manipulation and scale. The core interaction loop involved panning, rotating, and scaling. A critical design decision was implementing distinct scale controls: a '1:1 true scale' mode to convey the massive, awe-inspiring size of an RG Compressor, and a 'small scale' mode so users could inspect intricate details without having to physically walk around a massive virtual object.</p>
       </div>
       <div class="case-media-grid sketch-grid">
-        <img src="../../assets/everllence/sketch-1.avif" alt="" />
-        <img src="../../assets/everllence/sketch-2.avif" alt="" />
+        <img src="../../assets/everllence/sketch-1.avif" alt="Annotated desktop wireframe with company logo, QR code prompt and instructions, and the 3D model on a gradient background" width="1339" height="768" loading="lazy" />
+        <img src="../../assets/everllence/sketch-2.avif" alt="Annotated mobile wireframe with a Start AR button, 1:1 and Small Scale buttons, and the 3D model" width="404" height="720" loading="lazy" />
       </div>
     </section>
 
     <section class="principle-grid">
       <article class="principle-card">
-        <img src="../../assets/everllence/invisible-ui.png" alt="" />
+        <img src="../../assets/everllence/invisible-ui.png" alt="" width="512" height="512" loading="lazy" />
         <h2><strong>Invisible UI</strong></h2>
         <p>The 3D model is the hero. Controls should fade away when not in active use to maximize the AR canvas.</p>
       </article>
       <article class="principle-card">
-        <img src="../../assets/everllence/scale.webp" alt="" />
+        <img src="../../assets/everllence/scale.webp" alt="" width="980" height="980" loading="lazy" />
         <h2><strong>Contextual Scale</strong></h2>
         <p>Provide dual viewing modes: 1:1 scale for physical awe, and tabletop scale for detailed inspection.</p>
       </article>
       <article class="principle-card">
-        <img src="../../assets/everllence/modular.png" alt="" />
+        <img src="../../assets/everllence/modular.png" alt="" width="225" height="225" loading="lazy" />
         <h2><strong>Modular Architecture</strong></h2>
         <p>Build a viewer wrapper that can accept any optimized 3D asset, ensuring the platform is future-proof for new exhibits.</p>
       </article>
@@ -156,9 +161,9 @@
       <h2>What was the <strong>Result</strong>?</h2>
       <p>A lightweight browser based modelviewer<br />Running on open source libraries<br />Streamlined for both Android &amp; iOS<br />When opened on a Computer(non-handheld devices): A 3D Model Viewer, explore the 3D Model, also shows a QR code to scan using a phone/tablet<br />When opened on a phone/tablet with AR capabilities: A few control buttons Start AR buttons</p>
       <div class="result-grid">
-        <div class="result-media"><img src="../../assets/everllence/screen-recording.gif" alt="" /></div>
-        <div class="result-media"><img src="../../assets/everllence/phone-result.avif" alt="" /></div>
-        <div class="result-media"><img src="../../assets/everllence/result-frame.avif" alt="" /></div>
+        <div class="result-media"><video controls autoplay loop muted playsinline loading="lazy" width="1000" height="562" poster="../../assets/everllence/screen-recording.poster.webp" aria-label="Screen recording of the desktop 3D model viewer with its QR code prompt" src="../../assets/everllence/screen-recording.mp4"></video></div>
+        <div class="result-media"><img src="../../assets/everllence/phone-result.avif" alt="Mobile viewer showing the compressor model with Start AR and scale buttons" width="1290" height="2796" loading="lazy" /></div>
+        <div class="result-media"><img src="../../assets/everllence/result-frame.avif" alt="Compressor model placed on a hall floor in AR mode" width="400" height="876" loading="lazy" /></div>
       </div>
     </section>
 
