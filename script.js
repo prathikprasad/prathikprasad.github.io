@@ -105,9 +105,9 @@ const experimentCards = [
   {
     title: 'WTFire!?',
     description: 'Have you ever played "Smash your PC"? We\'ve made a MxR experience where you throw virtual objects into a bonfire',
+    url: 'projects/wtfire/',
     image: 'assets/wtfire.avif',
     imageClass: 'contain wip',
-    wipLabel: 'WIP',
     tags: ['Mixed Reality', 'Gamification', 'WebXR']
   },
   {

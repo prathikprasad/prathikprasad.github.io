@@ -914,6 +914,36 @@ a.card:active { opacity: .7; }
 .city-visual-grid .case-figure figcaption {
   text-transform: none;
 }
+/* WTFire clips fill their rounded frame at 16:9 instead of letterboxing inside a fixed height. */
+.wtfire-visual-grid .case-figure :is(img, video) {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+/* The thrown object, pinned to the top-left corner of its clip. */
+.wtfire-clip {
+  position: relative;
+}
+.wtfire-clip > video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.case-study .wtfire-clip img.wtfire-object {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: clamp(44px, 6vw, 72px);
+  height: auto;
+  aspect-ratio: 1;
+  padding: 6px;
+  object-fit: contain;
+  border-radius: var(--inner-radius);
+  background: radial-gradient(circle at 50% 50%, #e2e2e2 0%, #f1f1f1 45%, #ffffff 75%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+  pointer-events: none;
+}
 .case-image-stack {
   display: grid;
   gap: 10px;
