@@ -50,37 +50,6 @@ const projectCards = [
     tags: ['Experimental Typeface', 'Python', 'ChatGPT Codex', 'AI Coding Assistant']
   },
   {
-    title: 'Here & Now:',
-    description: 'Social app to connect BMW car owners',
-    url: 'projects/bmw/',
-    image: 'assets/bmw-cover.webp',
-    imageClass: 'contain',
-    span: 3,
-    categories: ['product'],
-    tags: ['UX Design', 'UX Research', 'UI Design', 'Figma']
-  },
-  {
-    title: 'Lost & Found:',
-    description: '',
-    url: 'projects/hackbay/',
-    image: 'assets/hackbay-cover.png',
-    avatar: 'assets/avatar-trophy.avif',
-    imageClass: 'cover',
-    span: 3,
-    categories: ['product'],
-    tags: ['UX Research', 'Brand Design', 'Data Visualisation']
-  },
-  {
-    title: 'Content Design: PfA Data Visualization and Content Design',
-    description: '',
-    url: 'projects/pfa/',
-    image: 'assets/pfa-content.webp',
-    imageClass: 'contain',
-    span: 3,
-    categories: ['graphic'],
-    tags: ['Data Visualisation', 'Power BI', 'Figma']
-  },
-  {
     title: 'Public Transport Map Design',
     description: 'Bangalore Metro and Bus network map design',
     image: 'assets/portfolio-map-wide.svg',
@@ -94,6 +63,14 @@ const projectCards = [
 
 const experimentCards = [
   {
+    title: 'WTFire!?',
+    description: 'Have you ever played "Smash your PC"? We\'ve made a MxR experience where you throw virtual objects into a bonfire',
+    url: 'projects/wtfire/',
+    image: 'assets/wtfire.avif',
+    imageClass: 'contain wip',
+    tags: ['Mixed Reality', 'Gamification', 'WebXR']
+  },
+  {
     title: 'City Saviours:',
     description: 'Metaverse game to learn how to make more green everyday choices',
     url: 'projects/city-saviours/',
@@ -103,20 +80,36 @@ const experimentCards = [
     tags: ['Metaverse', 'Gamification', 'Roblox']
   },
   {
-    title: 'WTFire!?',
-    description: 'Have you ever played "Smash your PC"? We\'ve made a MxR experience where you throw virtual objects into a bonfire',
-    url: 'projects/wtfire/',
-    image: 'assets/wtfire.avif',
-    imageClass: 'contain wip',
-    tags: ['Mixed Reality', 'Gamification', 'WebXR']
-  },
-  {
     title: 'Solar Panel Digital Twin',
     description: 'Designed and Built a DigitalTwin of a house and connected it with real-time solar panel data',
     image: 'assets/digitaltwin.gif',
     imageClass: 'cover wip',
     wipLabel: 'WIP',
     tags: ['Digital Twin', 'Unity', 'Hackathon']
+  },
+  {
+    title: 'Here & Now:',
+    description: 'Social app to connect BMW car owners',
+    url: 'projects/bmw/',
+    image: 'assets/bmw-cover.webp',
+    imageClass: 'contain',
+    tags: ['UX Design', 'UX Research', 'UI Design', 'Figma']
+  },
+  {
+    title: 'Lost & Found:',
+    description: 'Crate-tracking concept for Schaeffler, winner of the Best Use Case prize',
+    url: 'projects/hackbay/',
+    image: 'assets/hackbay-cover.png',
+    avatar: 'assets/avatar-trophy.avif',
+    imageClass: 'cover',
+    tags: ['UX Research', 'Brand Design', 'Data Visualisation']
+  },
+  {
+    title: 'Content Design: PfA Data Visualization and Content Design',
+    url: 'projects/pfa/',
+    image: 'assets/pfa-content.webp',
+    imageClass: 'contain',
+    tags: ['Data Visualisation', 'Power BI', 'Figma']
   }
 ];
 

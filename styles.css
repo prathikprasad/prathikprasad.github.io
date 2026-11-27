@@ -181,7 +181,6 @@ main { overflow: hidden; }
 }
 .hero-text-box {
   margin-top: 10px;
-  min-height: 98px;
   padding: 10px 20px;
 }
 .hero-text-box p {
